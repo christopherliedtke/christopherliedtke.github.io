@@ -5,11 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css?family=Nixie+One|Open+Sans:300,400&display=swap" rel="stylesheet" />
-
+        <link href="https://fonts.googleapis.com/css?family=Lato|Rasa:300,400,600&display=swap" rel="stylesheet" />
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/359e13dbb2.js" crossorigin="anonymous"></script>
-
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 
@@ -47,7 +45,201 @@
         </script> -->
     </head>
     <body data-spy="scroll" data-target="" data-offset="75">
-        <header></header>
+        <!-- Header -->
+        <header id="home">
+            <!-- Navbar -->
+            <nav class="navbar fixed-top navbar-expand-XX" id="navbar1">
+                <div class="container-fluid py-3 px-3 px-md-5">
+                    <!-- Menu button -->
+                    <button class="navbar-toggler ui-hamburger-05 collapsed order-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand mr-auto" href="https://christopherliedtke.github.io"><strong>CL</strong></a>
+
+                    <!-- Navbar links -->
+                    <div class="collapse navbar-collapse order-2" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto align-items-end">
+                            <a class="nav-item nav-link px-3" href="#home">Home</a>
+                            <a class="nav-item nav-link px-3" href="#projects">Projekte</a>
+                            <a class="nav-item nav-link px-3" href="#service">Leistungen</a>
+                            <a class="nav-item nav-link px-3" href="#about">Über</a>
+                            <a class="nav-item nav-link px-3" href="#contact">Kontakt</a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Sidebar -->
+        <nav class="navbar p-0 position-fixed d-none d-md-block" id="navbar2">
+            <ul class="navbar-nav ml-auto align-items-center">
+                <a class="nav-item nav-link p-3" href="#home"><i class="fas fa-home fa-lg"></i></a>
+                <a class="nav-item nav-link p-3" href="#projects"><i class="fas fa-desktop fa-lg"></i></a>
+                <a class="nav-item nav-link p-3" href="#service"><i class="fas fa-tasks fa-lg"></i></a>
+                <a class="nav-item nav-link p-3" href="#about"><i class="fas fa-info-circle fa-lg"></i></a>
+                <a class="nav-item nav-link p-3" href="#contact"><i class="fas fa-envelope fa-lg"></i></a>
+            </ul>
+        </nav>
+
+        <!-- Social -->
+        <div class="m-3 px-5 py-3 position-fixed d-none d-lg-block" id="social">
+            <a class="p-2" href="https://www.linkedin.com/in/christopherliedtke"><i class="fab fa-linkedin fa-lg mx-2"></i>LinkedIn</a>
+            <a class="p-2" href="https://github.com/christopherliedtke"><i class="fab fa-github fa-lg mx-2"></i>GitHub</a>
+        </div>
+
+        <!-- Home -->
+        <section class="container-fluid d-flex py-3" id="home">
+            <div class="container my-3">
+                <div class="row h-100 d-flex px-md-5">
+                    <div class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center align-items-lg-start my-4">
+                        <img class="img-fluid" id="homeImage" src="assets/img/ChristopherLiedtke.jpeg" alt="" />
+                    </div>
+                    <div class="col-12 col-lg-8 d-flex flex-column justify-content-center justify-content-md-start justify-content-lg-center align-items-start">
+                        <h1>
+                            Hi! <strong>Ich bin Chris,</strong> <br />
+                            professioneller <span>Webdeveloper</span> aus Leidenschaft.
+                        </h1>
+                        <a class="btn btn-primary my-3" href="#projects" role="button">MEINE PROJEKTE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <!-- MFA mal anders -->
+        <section class="container-fluid d-flex project py-5" id="projects">
+            <div class="container d-flex align-items-center my-3" id="mfaMalAnders">
+                <div class="row d-flex align-items-start px-md-5">
+                    <div class="col-12 col-lg-7 d-flex flex-column align-items-start px-lg-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>MFA mal anders</h2>
+                                <h3 class="h6">DESIGN | WEBDEVELOPMENT</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus beatae libero optio, eius repellat, sunt corporis, omnis suscipit reiciendis voluptate obcaecati quisquam est molestias cupiditate.</p>
+                                <a class="btn btn-primary mt-2 mb-5" href="https://www.mfa-mal-anders.de" role="button">SEITE ANSEHEN</a>
+                            </div>
+                        </div>
+                        <div class="row px-1 d-none d-lg-flex">
+                            <div class="col-3 col-md-2 p-0 pl-3">
+                                <img class="img-fluid rounded-circle imgTestimonial" src="assets/img/KristinMaurach_testimonial.jpeg" alt="" />
+                            </div>
+                            <div class="col-9 col-md-10">
+                                <blockquote class="blockquote text-right pr-lg-4">
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                    <footer class="blockquote-footer">Kristin Maurach von <cite title="Source Title">MFA mal anders</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projectImages col-12 col-lg-5 d-flex flex-column justify-content-start align-items-end align-items-lg-end mt-0 mb-5 my-lg-0">
+                        <img class="img-fluid projectImageNotebook" src="assets/img/MfaMalAnders_notebook.png" alt="" />
+                        <img class="img-fluid projectImageTablet" src="assets/img/MfaMalAnders_tablet.png" alt="" />
+                        <img class="img-fluid projectImageMobile" src="assets/img/MfaMalAnders_mobile.png" alt="" />
+                    </div>
+                    <div class="row px-1 d-lg-none">
+                        <div class="col-3 col-md-2 p-0 pl-3 text-right">
+                            <img class="img-fluid rounded-circle imgTestimonial" src="assets/img/KristinMaurach_testimonial.jpeg" alt="" />
+                        </div>
+                        <div class="col-9 col-md-10 pr-5">
+                            <blockquote class="blockquote text-right pr-lg-4">
+                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <footer class="blockquote-footer">Kristin Maurach von <cite title="Source Title">MFA mal anders</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stadt und Grün -->
+        <section class="container-fluid d-flex project py-5" id="">
+            <div class="container d-flex align-items-center my-3" id="stadtUndGruen">
+                <div class="row d-flex align-items-start px-md-5">
+                    <div class="col-12 col-lg-7 d-flex flex-column align-items-start px-lg-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Stadt und Grün</h2>
+                                <h3 class="h6">DESIGN | WEBDEVELOPMENT</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus beatae libero optio, eius repellat, sunt corporis, omnis suscipit reiciendis voluptate obcaecati quisquam est molestias cupiditate.</p>
+                                <a class="btn btn-primary mt-2 mb-5" href="https://www.stadtundgruen.com" role="button">SEITE ANSEHEN</a>
+                            </div>
+                        </div>
+                        <div class="row px-1 d-none d-lg-flex">
+                            <div class="col-3 col-md-2 p-0 pl-3">
+                                <img class="img-fluid rounded-circle imgTestimonial" src="assets/img/KristinMaurach_testimonial.jpeg" alt="" />
+                            </div>
+                            <div class="col-9 col-md-10">
+                                <blockquote class="blockquote text-right pr-lg-4">
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                    <footer class="blockquote-footer">Marcel Frischmuth von <cite title="Source Title">Stadt und Grün</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projectImages col-12 col-lg-5 d-flex flex-column justify-content-start align-items-end align-items-lg-end mt-0 mb-5 my-lg-0">
+                        <img class="img-fluid projectImageNotebook" src="assets/img/StadtUndGruen_notebook.png" alt="" />
+                        <img class="img-fluid projectImageTablet" src="assets/img/StadtUndGruen_tablet.png" alt="" />
+                        <img class="img-fluid projectImageMobile" src="assets/img/StadtUndGruen_mobile.png" alt="" />
+                    </div>
+                    <div class="row px-1 d-lg-none">
+                        <div class="col-3 col-md-2 p-0 pl-3 text-right">
+                            <img class="img-fluid rounded-circle imgTestimonial" src="assets/img/KristinMaurach_testimonial.jpeg" alt="" />
+                        </div>
+                        <div class="col-9 col-md-10 pr-5">
+                            <blockquote class="blockquote text-right pr-lg-4">
+                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <footer class="blockquote-footer">Marcel Frischmuth von <cite title="Source Title">Stadt und Grün</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Zuckerrede -->
+        <section class="container-fluid d-flex project py-5" id="">
+            <div class="container d-flex align-items-center my-3" id="zuckerrede">
+                <div class="row d-flex align-items-start px-md-5">
+                    <div class="col-12 col-lg-7 d-flex flex-column align-items-start px-lg-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Zuckerrede</h2>
+                                <h3 class="h6">DESIGN | WEBDEVELOPMENT</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus beatae libero optio, eius repellat, sunt corporis, omnis suscipit reiciendis voluptate obcaecati quisquam est molestias cupiditate.</p>
+                                <a class="btn btn-primary mt-2 mb-5" href="https://www.zuckerrede.de" role="button">SEITE ANSEHEN</a>
+                            </div>
+                        </div>
+                        <div class="row px-1 d-none d-lg-flex">
+                            <div class="col-3 col-md-2 p-0 pl-3">
+                                <img class="img-fluid rounded-circle imgTestimonial" src="assets/img/KatharinaAlbrecht_testimonial.jpg" alt="" />
+                            </div>
+                            <div class="col-9 col-md-10">
+                                <blockquote class="blockquote text-right pr-lg-4">
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                    <footer class="blockquote-footer">Katharina Albrecht von <cite title="Source Title">Zuckerrede</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projectImages col-12 col-lg-5 d-flex flex-column justify-content-start align-items-end align-items-lg-end mt-0 mb-5 my-lg-0">
+                        <img class="img-fluid projectImageNotebook" src="assets/img/Zuckerrede_notebook.png" alt="" />
+                        <img class="img-fluid projectImageTablet" src="assets/img/Zuckerrede_tablet.png" alt="" />
+                        <img class="img-fluid projectImageMobile" src="assets/img/Zuckerrede_mobile.png" alt="" />
+                    </div>
+                    <div class="row px-1 d-lg-none">
+                        <div class="col-3 col-md-2 p-0 pl-3 text-right">
+                            <img class="img-fluid rounded-circle imgTestimonial" src="assets/img/KatharinaAlbrecht_testimonial.jpg" alt="" />
+                        </div>
+                        <div class="col-9 col-md-10 pr-5">
+                            <blockquote class="blockquote text-right pr-lg-4">
+                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <footer class="blockquote-footer">Katharina Albrecht von <cite title="Source Title">Zuckerrede</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

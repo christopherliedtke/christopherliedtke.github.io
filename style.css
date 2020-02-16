@@ -1,7 +1,220 @@
-* {
-    box-sizing: border-box;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
+    background-color: rgb(252, 251, 250);
+    font-family: "Lato", sans-serif;
+    color: rgb(70, 85, 115);
+}
+
+h1,
+h2 {
+    font-family: "Rasa", sans-serif;
+    font-weight: 400;
+}
+
+nav {
+    font-family: "Lato", sans-serif;
+}
+
+a {
+    color: rgb(127, 155, 187);
+}
+
+a:hover {
+    color: rgb(70, 85, 115);
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(127, 155, 187);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: rgb(70, 85, 115);
+}
+
+#navbar2 {
+    top: 50%;
+    transform: translateY(-50%);
+    /* background-color: rgba(0, 0, 0, 0.03); */
+    border-radius: 5px;
+}
+
+/* Animate navbar menu icon */
+.ui-hamburger-05 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 35px;
+    height: 30px;
+    border: none;
+    position: relative;
+    background: linear-gradient(to bottom, rgb(70, 85, 115), rgb(70, 85, 115));
+    background-size: 0 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* transition: background-size 0.2s 0.25s ease; */
+    cursor: pointer;
+}
+
+.ui-hamburger-05:before,
+.ui-hamburger-05:after {
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: rgb(70, 85, 115);
+    content: "";
+    transition: transform 0.2s ease;
+}
+
+.ui-hamburger-05:before {
+    top: 10px;
+}
+
+.ui-hamburger-05:after {
+    bottom: 10px;
+}
+
+.ui-hamburger-05:not(.collapsed) {
+    background-size: 0 0;
+}
+
+.ui-hamburger-05:not(.collapsed):before,
+.ui-hamburger-05:not(.collapsed):after {
+    transition-delay: 0.1s;
+}
+
+.ui-hamburger-05:not(.collapsed):before {
+    transform: translateY(4px) rotate(45deg);
+}
+
+.ui-hamburger-05:not(.collapsed):after {
+    transform: translateY(-4px) rotate(-45deg);
+}
+/* End animate navbar menu icon */
+
+#social {
+    bottom: 0;
+    right: 0;
+    color: rgb(70, 85, 115);
+}
+
+#social i:hover {
+    color: rgb(127, 155, 187);
+}
+
+.btn-primary {
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border-width: 2px;
+    border-color: rgb(70, 85, 115);
+    color: rgb(70, 85, 115);
+    transition: ease 0.3s;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: transparent !important;
+    border-color: rgb(215, 122, 101) !important;
+    color: rgb(215, 122, 101) !important;
+}
+
+section {
+    min-height: 100vh;
+}
+
+#home {
+    background: url("assets/img/strasseBergeImHintergrund_1980.jpg") rgba(252, 251, 250, 0.9);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center top;
+}
+
+#home h1 {
+    font-size: 2.5em;
+    line-height: 1.4em;
+}
+
+#home span {
+    color: rgb(252, 251, 250);
+    background-color: rgb(215, 122, 101);
+    padding: 3px 5px;
+}
+
+#homeImage {
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.project h2 {
+    font-size: 2.5em;
+    color: rgb(215, 122, 101);
+    margin-bottom: 0;
+}
+
+.imgTestimonial {
+    width: 70px;
+    border-radius: 50%;
+    -webkit-box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.projectImages {
+    min-height: 370px;
+}
+
+.projectImageNotebook {
+    width: 400px;
+    object-fit: cover;
+}
+
+.projectImageTablet {
+    width: 170px;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-35%, 30%);
+}
+
+.projectImageMobile {
+    width: 100px;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-65%, 80%);
+}
+
+#mfaMalAnders h2 {
+    color: rgb(178, 63, 85);
+}
+
+#stadtUndGruen h2 {
+    color: rgb(92, 185, 70);
+}
+
+#zuckerrede h2 {
+    color: rgb(255, 164, 140);
+}
+
+/* Remove focus ring */
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) a:focus,
+body:not(.user-is-tabbing) textarea:focus {
+    outline: none;
 }
