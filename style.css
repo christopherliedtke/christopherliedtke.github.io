@@ -7,6 +7,7 @@ body {
     background-color: rgb(252, 251, 250);
     font-family: "Lato", sans-serif;
     color: rgb(70, 85, 115);
+    transition: linear 1s;
 }
 
 h1,
@@ -15,8 +16,18 @@ h2 {
     font-weight: 400;
 }
 
+h2 {
+    font-size: 2.5em;
+    color: rgb(215, 122, 101);
+    margin-bottom: 0;
+}
+
 nav {
     font-family: "Lato", sans-serif;
+}
+
+#navbar1 {
+    transition: linear 0.3s;
 }
 
 a {
@@ -149,7 +160,7 @@ section {
 }
 
 #homeImage {
-    width: 300px;
+    width: 250px;
     object-fit: cover;
     border-radius: 50%;
     -webkit-box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.3);
@@ -157,10 +168,9 @@ section {
     box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.3);
 }
 
-.project h2 {
-    font-size: 2.5em;
-    color: rgb(215, 122, 101);
-    margin-bottom: 0;
+.project {
+    min-height: 100vh;
+    padding: 3rem 1rem;
 }
 
 .imgTestimonial {
@@ -202,12 +212,36 @@ section {
     color: rgb(178, 63, 85);
 }
 
+#mfaMalAndersLeft {
+    background: url("assets/img/Logo_Mfamalanders_800.png") rgba(252, 251, 250, 0.98);
+    background-blend-mode: overlay;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 #stadtUndGruen h2 {
     color: rgb(92, 185, 70);
 }
 
+#stadtUndGruenLeft {
+    background: url("assets/img/stadtundgruen_logo_v01.png") rgba(252, 251, 250, 0.95);
+    background-blend-mode: overlay;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
 #zuckerrede h2 {
     color: rgb(255, 164, 140);
+}
+
+#zuckerredeLeft {
+    background: url("assets/img/zuckerrede_logo.png") rgba(252, 251, 250, 0.93);
+    background-blend-mode: overlay;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 /* Remove focus ring */
