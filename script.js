@@ -2,38 +2,16 @@
     $(document).ready(function() {
         formSubmissionWORedirect();
         collapseNavbarAfterClick();
+        animateBlock();
     });
 
     $(window).resize(function() {});
 
     $(window).scroll(function() {
         changeNavbar();
+        animateBlock();
         // jumpToSection();
     });
-
-    // Jump to next/previous section on scroll
-    // var sections = $("section");
-    // var screenHeight = $(window).outerHeight();
-    // var previousPositionY2 = $(document).scrollTop();
-
-    // function jumpToSection() {
-    //     // const currentPositionY2 = $(document).scrollTop();
-    //     // // console.log("previousPositionY2: ", previousPositionY2);
-    //     // // console.log("currentPositionY2: ", currentPositionY2);
-    //     // for (let i = 0; i < sections.length; i++) {
-    //     //     const sectionTopPosition = sections.eq(i).offset().top;
-    //     //     const sectionOuterHeight = sections.eq(i).outerHeight();
-    //     //     const sectionBottomPosition = sectionTopPosition + sectionOuterHeight;
-    //     //     if (currentPositionY2 > previousPositionY2 && sectionBottomPosition < currentPositionY2 + screenHeight && sectionBottomPosition > currentPositionY2) {
-    //     //         // console.log("section:", i);
-    //     //         $(document).scrollTop(sections.eq(i + 1).offset().top);
-    //     //     }
-    //     //     // console.log("sectionTopPosition", i, ": ", topPosition);
-    //     //     // console.log(previousPositionY);
-    //     //     // console.log("sectionOuterHeight", i, ": ", sectionOuterHeight);
-    //     // }
-    //     // previousPositionY2 = currentPositionY2;
-    // }
 
     // Collapse navbar menu after click
     function collapseNavbarAfterClick() {
@@ -64,6 +42,34 @@
         previousPositionY = currentPositionY;
     }
 
+    // Animate elements with .animateblock
+    var $animatedElements = $(".animateblock");
+
+    function animateBlock() {
+        // Get window height, document height, current distande from top of window
+        var windowHeight = $(window).height();
+        var documentHeight = $(document).height();
+        var winTop = $(window).scrollTop();
+        // console.log(winTop);
+
+        // loop through each item to check when it animates
+        $animatedElements.each(function() {
+            var $element = $(this);
+            // Get element's distance from top of page in pixels
+            var elementOffsetTop = $element.offset().top;
+            // console.log(elementOffsetTop);
+
+            if ($element.hasClass("animated") && winTop > elementOffsetTop - windowHeight * 0.75) {
+                return true;
+            } else if ($element.hasClass("animated") && winTop < elementOffsetTop - windowHeight * 0.75) {
+                $element.removeClass("animated");
+                return true;
+            } else if (winTop > elementOffsetTop - windowHeight * 0.75) {
+                $element.addClass("animated");
+            }
+        });
+    }
+
     // Form submission w/o redirecting
     function formSubmissionWORedirect() {
         $("#contactForm").submit(function() {
@@ -76,8 +82,32 @@
             // Reset form after submission
             $("#contactForm")[0].reset();
             $("#contactFormSubmit").blur();
-            $("#contactFormSuccessMessage").css("display", "inline");
+            $("#contactFormSuccessMessage").css("display", "inline-block");
             return false;
         });
     }
+
+    // Jump to next/previous section on scroll
+    // var sections = $("section");
+    // var screenHeight = $(window).outerHeight();
+    // var previousPositionY2 = $(document).scrollTop();
+
+    // function jumpToSection() {
+    //     // const currentPositionY2 = $(document).scrollTop();
+    //     // // console.log("previousPositionY2: ", previousPositionY2);
+    //     // // console.log("currentPositionY2: ", currentPositionY2);
+    //     // for (let i = 0; i < sections.length; i++) {
+    //     //     const sectionTopPosition = sections.eq(i).offset().top;
+    //     //     const sectionOuterHeight = sections.eq(i).outerHeight();
+    //     //     const sectionBottomPosition = sectionTopPosition + sectionOuterHeight;
+    //     //     if (currentPositionY2 > previousPositionY2 && sectionBottomPosition < currentPositionY2 + screenHeight && sectionBottomPosition > currentPositionY2) {
+    //     //         // console.log("section:", i);
+    //     //         $(document).scrollTop(sections.eq(i + 1).offset().top);
+    //     //     }
+    //     //     // console.log("sectionTopPosition", i, ": ", topPosition);
+    //     //     // console.log(previousPositionY);
+    //     //     // console.log("sectionOuterHeight", i, ": ", sectionOuterHeight);
+    //     // }
+    //     // previousPositionY2 = currentPositionY2;
+    // }
 })();

@@ -10,6 +10,10 @@ body {
     transition: linear 1s;
 }
 
+section {
+    min-height: 100vh;
+}
+
 h1,
 h2 {
     font-family: "Rasa", sans-serif;
@@ -22,12 +26,8 @@ h2 {
     margin-bottom: 0;
 }
 
-nav {
-    font-family: "Lato", sans-serif;
-}
-
-#navbar1 {
-    transition: linear 0.3s;
+p {
+    margin-bottom: 0.4em;
 }
 
 a {
@@ -39,6 +39,29 @@ a:hover {
     text-decoration: none;
 }
 
+.form-control {
+    border-radius: 10px;
+}
+
+.form-control:focus {
+    border: 2px solid rgb(215, 122, 101);
+    box-shadow: none;
+}
+
+.form-group label {
+    font-size: 0.9em;
+}
+
+.text-white {
+    color: rgb(252, 251, 250);
+}
+
+/* #Navbar */
+
+nav {
+    font-family: "Lato", sans-serif;
+}
+
 .navbar-nav .nav-link {
     color: rgb(127, 155, 187);
 }
@@ -48,6 +71,10 @@ a:hover {
     color: rgb(70, 85, 115);
 }
 
+#navbar1 {
+    transition: linear 0.3s;
+}
+
 #navbar2 {
     top: 50%;
     transform: translateY(-50%);
@@ -55,7 +82,7 @@ a:hover {
     border-radius: 5px;
 }
 
-/* Animate navbar menu icon */
+/* #Animate navbar menu icon */
 .ui-hamburger-05 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -68,7 +95,6 @@ a:hover {
     background-size: 0 0;
     background-repeat: no-repeat;
     background-position: center center;
-    /* transition: background-size 0.2s 0.25s ease; */
     cursor: pointer;
 }
 
@@ -107,8 +133,8 @@ a:hover {
 .ui-hamburger-05:not(.collapsed):after {
     transform: translateY(-4px) rotate(-45deg);
 }
-/* End animate navbar menu icon */
 
+/* #SocialMenu */
 #social {
     bottom: 0;
     right: 0;
@@ -119,6 +145,7 @@ a:hover {
     color: rgb(127, 155, 187);
 }
 
+/* #Buttons */
 .btn-primary {
     border-radius: 50px;
     padding: 10px 20px;
@@ -137,12 +164,9 @@ a:hover {
     color: rgb(215, 122, 101) !important;
 }
 
-section {
-    min-height: 100vh;
-}
-
+/* #Home */
 #home {
-    background: url("assets/img/strasseBergeImHintergrund_1980.jpg") rgba(252, 251, 250, 0.9);
+    background: url("assets/img/strasseBergeImHintergrund_1980x1320.jpg") rgba(252, 251, 250, 0.9);
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center top;
@@ -168,9 +192,14 @@ section {
     box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.3);
 }
 
+/* #Projects */
 .project {
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 3rem 1rem;
+}
+
+.project blockquote p {
+    font-size: 0.95rem;
 }
 
 .imgTestimonial {
@@ -208,18 +237,7 @@ section {
     transform: translate(-65%, 80%);
 }
 
-#mfaMalAnders h2 {
-    color: rgb(178, 63, 85);
-}
-
-#mfaMalAndersLeft {
-    background: url("assets/img/Logo_Mfamalanders_800.png") rgba(252, 251, 250, 0.98);
-    background-blend-mode: overlay;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
+/* # --> Stadt und Gruen */
 #stadtUndGruen h2 {
     color: rgb(92, 185, 70);
 }
@@ -232,6 +250,7 @@ section {
     background-position: center top;
 }
 
+/* # --> Zuckerrede */
 #zuckerrede h2 {
     color: rgb(255, 164, 140);
 }
@@ -244,11 +263,205 @@ section {
     background-position: center center;
 }
 
-/* Remove focus ring */
+/* # --> MFA mal anders */
+#mfaMalAnders h2 {
+    color: rgb(178, 63, 85);
+}
+
+#mfaMalAndersLeft {
+    background: url("assets/img/Logo_Mfamalanders_800.png") rgba(252, 251, 250, 0.98);
+    background-blend-mode: overlay;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* #Contact */
+#contact {
+    background: rgba(127, 155, 187, 0.5);
+}
+
+#contactFormSuccessMessage {
+    border-radius: 50px;
+}
+
+/* #BusinessCard */
+.business-card {
+    width: 45vh;
+    height: calc(45vh * 54 / 86);
+    background: url("assets/img/strasseBergeImHintergrund_1980x1320.jpg") rgba(252, 251, 250, 0.9);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center center;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.business-card-content {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(127, 155, 187);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.business-card-content.back-side {
+    position: relative;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 1.7vh;
+}
+
+.business-card-content.back-side .to-right {
+    top: 0;
+    right: 0;
+    margin: 15px;
+}
+
+.business-card-content.back-side .to-left {
+    top: 0;
+    left: 0;
+    margin: 2vh;
+}
+
+.business-card-content.back-side .to-left span {
+    padding: 7px;
+    border-radius: 50%;
+    border: 1px solid rgb(70, 85, 115);
+    font-size: 1.3vh;
+}
+
+.business-card-content.back-side .fa-ul {
+    margin-left: 3vh;
+    margin-bottom: 0;
+}
+
+.business-card-content.back-side li {
+    margin: 3px 0;
+    padding-left: 10px;
+    font-size: 1.35vh;
+}
+
+.business-card-content.back-side a {
+    color: rgb(70, 85, 115);
+}
+
+.business-card-content.back-side a:hover {
+    color: rgb(127, 155, 187);
+}
+
+.business-card-content.back-side div h3 {
+    font-size: 2vh;
+}
+
+.business-card-content.back-side div h4 {
+    font-size: 1vh;
+    display: inline-block;
+}
+
+.business-card-content img {
+    max-height: 45%;
+    border-radius: 50%;
+    border: 1px solid rgb(127, 155, 187);
+    padding: 3px;
+    margin-bottom: 15px;
+}
+
+.business-card-content h3 {
+    font-family: "Rasa", sans-serif;
+    font-weight: 400;
+    font-size: 3vh;
+    margin-bottom: 0px;
+}
+
+.business-card-content h4 {
+    border-top: solid 1px rgb(215, 122, 101);
+    padding-top: 5px;
+    font-size: 1.5vh;
+}
+
+/* #Animations */
+.animateblock {
+    opacity: 0;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.animateblock.animated {
+    opacity: 1;
+}
+
+.animateblock.left {
+    transform: translateX(-30%);
+}
+
+.animateblock.left.animated {
+    transform: translateX(0%);
+}
+
+.animateblock.width-left#homeImage {
+    /* width: 25px; */
+    transform: scale(0.2) translateX(-250%);
+}
+
+.animateblock.width-left.animated#homeImage {
+    transform: scale(1) translateX(0%);
+    transition-delay: 1s;
+}
+
+.animateblock.bottom {
+    transform: translateY(40%);
+}
+
+.animateblock.bottom.animated {
+    transform: translateY(0%);
+}
+
+.animateblock.bottom.projectImageTablet {
+    transform: translate(-35%, 90%);
+}
+
+.animateblock.bottom.projectImageMobile {
+    transform: translate(-65%, 150%);
+}
+
+.animateblock.bottom.animated.projectImageTablet {
+    transform: translate(-35%, 30%);
+}
+
+.animateblock.bottom.animated.projectImageMobile {
+    transform: translate(-65%, 80%);
+}
+
+/* #Remove focus ring */
 body:not(.user-is-tabbing) button:focus,
 body:not(.user-is-tabbing) input:focus,
 body:not(.user-is-tabbing) select:focus,
 body:not(.user-is-tabbing) a:focus,
 body:not(.user-is-tabbing) textarea:focus {
     outline: none;
+}
+
+/* #Scrollbar */
+body::-webkit-scrollbar {
+    width: 0.7em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(70, 85, 115);
+    border-radius: 10px;
+    /* outline: 1px solid rgb(70, 85, 115); */
 }
