@@ -52,6 +52,14 @@ a:hover {
     font-size: 0.9em;
 }
 
+.a-primary {
+    color: rgb(70, 85, 115);
+}
+
+.a-primary:hover {
+    color: rgba(70, 85, 115, 0.7);
+}
+
 .text-white {
     color: rgb(252, 251, 250);
 }
@@ -154,6 +162,11 @@ nav {
     border-color: rgb(70, 85, 115);
     color: rgb(70, 85, 115);
     transition: ease 0.3s;
+}
+
+.btn-primary:disabled {
+    background: lightgray;
+    border: none;
 }
 
 .btn-primary:hover,

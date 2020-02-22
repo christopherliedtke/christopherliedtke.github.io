@@ -310,10 +310,11 @@
                     <div class="col-12 col-lg-6 d-flex flex-column order-lg-2 px-4" id="">
                         <h2>Kontakt</h2>
                         <h3 class="h6 text-white">GET IN TOUCH</h3>
-                        <p>
-                            Hast Du Interesse an einer Zusammenarbeit?
-                        </p>
+                        <p>Hast Du Interesse an einer Zusammenarbeit?</p>
                         <p>Egal ob einfache Webseite oder langfristige Projekte! Melde Dich und wir besprechen Deine Ideen und Wünsche ganz unverbindlich.</p>
+                        <p class="my-3">
+                            <a class="a-primary" href="mailto:christopherliedtke@gmx.com"><i class="fas fa-envelope mr-3"></i>christopherliedtke@gmx.com</a>
+                        </p>
                         <form class="my-3" method="post" action="contact.php" target="_self" id="contactForm">
                             <div class="form-group">
                                 <label for="inputName">NAME*</label>
@@ -339,7 +340,7 @@
                                 <input type="checkbox" class="form-check-input" id="inputCheckbox" required />
                                 <label class="form-check-label" for="inputCheckbox">Ich habe die <a href="#">Datenschutzerklärung</a> zur Kenntnis genommen. Ich stimme zu, dass meine Angaben zur Kontaktaufnahme und für Rückfragen dauerhaft gespeichert werden.</label>
                             </div>
-                            <button type="submit" value="Send" class="btn btn-primary" id="contactFormSubmit">SENDEN</button>
+                            <button type="submit" value="Send" class="btn btn-primary" id="contactFormSubmit" disabled>DISABLED</button>
                             <div class="alert alert-success m-2" id="contactFormSuccessMessage" role="alert" style="display: none">
                                 Danke für Deine Nachricht!
                             </div>
