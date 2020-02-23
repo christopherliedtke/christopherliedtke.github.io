@@ -211,6 +211,11 @@ nav {
     padding: 3rem 1rem;
 }
 
+.project i {
+    margin-top: 1em;
+    margin-right: 6px;
+}
+
 .project blockquote p {
     font-size: 0.95rem;
 }
@@ -296,6 +301,10 @@ nav {
 
 #contactFormSuccessMessage {
     border-radius: 50px;
+}
+
+.form-check {
+    padding-left: 0.5em;
 }
 
 /* #BusinessCard */
@@ -400,6 +409,11 @@ nav {
     font-size: 1.5vh;
 }
 
+/* #Footer */
+#footer {
+    background: rgba(127, 155, 187, 0.5);
+}
+
 /* #Animations */
 .animateblock {
     opacity: 0;
@@ -477,4 +491,43 @@ body::-webkit-scrollbar-thumb {
     background-color: rgb(70, 85, 115);
     border-radius: 10px;
     /* outline: 1px solid rgb(70, 85, 115); */
+}
+
+/* #Checkbox style */
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"] + label {
+    width: 32px;
+    height: 20px;
+    border-radius: 20px;
+    border: 2px solid #ddd;
+    background-color: rgb(215, 122, 101);
+    display: inline-block;
+    content: "";
+    /* float: left; */
+    margin-right: 5px;
+    transition: background-color 0.5s linear;
+    margin-top: 10px;
+}
+input[type="checkbox"] + label:hover {
+    cursor: pointer;
+}
+input[type="checkbox"] + label::before {
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: block;
+    content: "";
+    /* float: left; */
+    margin-right: 5px;
+    transition: margin 0.1s linear;
+    box-shadow: 0px 0px 5px #aaa;
+}
+input[type="checkbox"]:checked + label {
+    background-color: rgb(70, 85, 115);
+}
+input[type="checkbox"]:checked + label::before {
+    margin: 0 0 0 12px;
 }
