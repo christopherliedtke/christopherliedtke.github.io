@@ -13,14 +13,14 @@
         // jumpToSection();
     });
 
-    // Collapse navbar menu after click
+    // #Collapse navbar menu after click
     function collapseNavbarAfterClick() {
         $(".navbar-nav>a").on("click", function() {
             $(".navbar-collapse").collapse("hide");
         });
     }
 
-    // Hide/Show navbar on scroll
+    // #Hide/Show navbar on scroll
     var previousPositionY = $(document).scrollTop();
 
     function changeNavbar() {
@@ -42,7 +42,7 @@
         previousPositionY = currentPositionY;
     }
 
-    // Animate elements with .animateblock
+    // #Animate elements with .animateblock
     var $animatedElements = $(".animateblock");
 
     function animateBlock() {
@@ -70,19 +70,28 @@
         });
     }
 
-    // Form submission w/o redirecting
+    // #Form submission w/o redirecting
     function formSubmissionWORedirect() {
         $("#contactForm").submit(function() {
             var formdata = $(this).serialize();
             $.ajax({
                 type: "POST",
-                url: "contact.php",
-                data: formdata
+                url: "https://formspree.io/xdozaolp",
+                data: { message: formdata },
+                dataType: "json",
+                success: function() {
+                    // Reset form after submission
+                    $("#contactForm")[0].reset();
+                    $("#contactFormSubmit").blur();
+                    $("#contactFormErrorMessage").css("display", "none");
+                    $("#contactFormSuccessMessage").css("display", "inline-block");
+                },
+                error: function(error) {
+                    console.log(error);
+
+                    $("#contactFormErrorMessage").css("display", "inline-block");
+                }
             });
-            // Reset form after submission
-            $("#contactForm")[0].reset();
-            $("#contactFormSubmit").blur();
-            $("#contactFormSuccessMessage").css("display", "inline-block");
             return false;
         });
     }

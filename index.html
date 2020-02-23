@@ -315,7 +315,7 @@
                         <p class="my-3">
                             <a class="a-primary" href="mailto:christopherliedtke@gmx.com"><i class="fas fa-envelope mr-3"></i>christopherliedtke@gmx.com</a>
                         </p>
-                        <form class="my-3" method="post" action="contact.php" target="_self" id="contactForm">
+                        <form class="my-3" method="POST" action="https://formspree.io/xdozaolp" target="_self" id="contactForm">
                             <div class="form-group">
                                 <label for="inputName">NAME*</label>
                                 <input type="text" name="name" class="form-control" id="inputName" required />
@@ -340,9 +340,12 @@
                                 <input type="checkbox" class="form-check-input" id="inputCheckbox" required />
                                 <label class="form-check-label" for="inputCheckbox">Ich habe die <a href="#">Datenschutzerklärung</a> zur Kenntnis genommen. Ich stimme zu, dass meine Angaben zur Kontaktaufnahme und für Rückfragen dauerhaft gespeichert werden.</label>
                             </div>
-                            <button type="submit" value="Send" class="btn btn-primary" id="contactFormSubmit" disabled>DISABLED</button>
+                            <button type="submit" value="Send" class="btn btn-primary" id="contactFormSubmit">SENDEN</button>
                             <div class="alert alert-success m-2" id="contactFormSuccessMessage" role="alert" style="display: none">
                                 Danke für Deine Nachricht!
+                            </div>
+                            <div class="alert alert-danger my-2" id="contactFormErrorMessage" role="alert" style="display: none">
+                                Es ist leider ein Fehler aufgetreten. Bitte versuche es später noch einmal oder sende mir direct eine E-Mail.
                             </div>
                         </form>
                     </div>
