@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css?family=Lato|Rasa:300,400,600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lato|Rasa:300,500&display=swap" rel="stylesheet" />
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/359e13dbb2.js" crossorigin="anonymous"></script>
         <!-- Bootstrap CSS -->
@@ -88,7 +88,7 @@
         </div>
 
         <!-- #Home -->
-        <section class="container-fluid d-flex py-3" id="home">
+        <section class="container-fluid d-flex py-3 px-0" id="home">
             <div class="container my-3">
                 <div class="row h-100 d-flex px-md-5">
                     <div class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center align-items-lg-start my-4">
@@ -96,8 +96,8 @@
                     </div>
                     <div class="col-12 col-lg-8 d-flex flex-column justify-content-center justify-content-md-start justify-content-lg-center align-items-start">
                         <h1 class="">
-                            Hi! <strong>Ich bin Chris,</strong> <br />
-                            professioneller <span>Webdeveloper</span> aus Leidenschaft.
+                            Hi! <span class="bold">Ich bin Chris,</span> <br />
+                            professioneller <span class="highlight bold">Webdeveloper</span> aus Leidenschaft.
                         </h1>
                         <a class="btn btn-primary my-3" href="#projects" role="button">MEINE PROJEKTE</a>
                     </div>
@@ -106,14 +106,15 @@
         </section>
 
         <!-- #Projects -->
-        <section class="container-fluid d-flex flex-column py-0" id="projects">
-            <div class="container d-flex justify-content-center mt-5 d-lg-none">
-                <h2>Projekte</h2>
+        <section class="container-fluid d-flex flex-column p-0" id="projects">
+            <div class="container d-none flex-column mt-5 d-lg-none">
+                <h2>Portfolio</h2>
+                <h3 class="h6">MEINE PROJEKTE</h3>
             </div>
 
             <!-- #Stadt und Grün -->
             <div class="container d-flex align-items-center project" id="stadtUndGruen">
-                <div class="row d-flex align-items-start px-md-5">
+                <div class="row d-flex align-items-center px-md-5">
                     <div class="col-12 col-lg-7 d-flex flex-column align-items-start px-lg-5" id="stadtUndGruenLeft">
                         <div class="row">
                             <div class="col-12">
@@ -121,12 +122,13 @@
                                 <h3 class="h6">DESIGN | WEBDEVELOPMENT</h3>
                                 <p>Stadt und Grün ist ein kleines Unternehmen, das Dienstleistungen rund um Garten- und Landschaftsbau anbietet.</p>
                                 <p>Die Webseite sollte modern, übersichtlich und auf den Punkt gestaltet werden. Eine übersichtliche Darstellung der angebotenen Leistungen sowie eine einfache Möglichkeit zur Kontaktaufnahme sind die zentralen Elemente der Seite.</p>
-                                <p><i class="fab fa-html5"></i><i class="fab fa-css3"></i><i class="fab fa-php"></i><i class="fab fa-bootstrap"></i><i class="fab fa-js"></i></p>
+                                <p class="mt-3"><i class="fab fa-html5"></i><i class="fab fa-css3"></i><i class="fab fa-php"></i><i class="fab fa-bootstrap"></i><i class="fab fa-js"></i></p>
                                 <p>Bei der Umsetzung kam die Bootstrap Bibliothek in Verbindung mit JQuery zur Darstellung von dynamischen Inhalten und Animationen zum Einsatz.</p>
                                 <a class="btn btn-primary mt-2 mb-5" href="https://www.stadtundgruen.com" role="button">SEITE ANSEHEN</a>
                             </div>
                         </div>
-                        <div class="row px-1 d-none d-lg-flex">
+                        <div class="row px-1 d-none d-lg-flex animateblock left">
+                            <div class="testimonial-background"><i class="fas fa-quote-right m-0 p-0"></i></div>
                             <div class="col-3 col-md-2 p-0 pl-3">
                                 <img class="img-fluid rounded-circle imgTestimonial" src="assets/img/KristinMaurach_testimonial_200x200.jpg" alt="" />
                             </div>
@@ -139,11 +141,13 @@
                         </div>
                     </div>
                     <div class="projectImages col-12 col-lg-5 d-flex flex-column justify-content-start align-items-end mt-0 mb-5 my-lg-0">
+                        <div class="position-absolute projectImageBackground"></div>
                         <img class="img-fluid projectImageNotebook animateblock bottom" src="assets/img/StadtUndGruen_notebook_800x450.png" alt="" />
                         <img class="img-fluid projectImageTablet animateblock bottom" src="assets/img/StadtUndGruen_tablet_400x553.png" alt="" />
                         <img class="img-fluid projectImageMobile animateblock bottom" src="assets/img/StadtUndGruen_mobile_300x594.png" alt="" />
                     </div>
-                    <div class="row px-1 d-lg-none animateblock left">
+                    <div class="row px-1 d-lg-none animateblock left mt-5 mx-0">
+                        <div class="testimonial-background"><i class="fas fa-quote-right m-0 p-0"></i></div>
                         <div class="col-3 col-md-2 p-0 pl-3 text-right">
                             <img class="img-fluid rounded-circle imgTestimonial" src="assets/img/KristinMaurach_testimonial_200x200.jpg" alt="" />
                         </div>
@@ -159,7 +163,7 @@
 
             <!-- #Zuckerrede -->
             <div class="container d-flex align-items-center project" id="zuckerrede">
-                <div class="row d-flex align-items-start px-md-5">
+                <div class="row d-flex align-items-center px-md-5">
                     <div class="col-12 col-lg-7 d-flex flex-column align-items-start px-lg-5" id="zuckerredeLeft">
                         <div class="row">
                             <div class="col-12">
@@ -167,12 +171,13 @@
                                 <h3 class="h6">DESIGN | WEBDEVELOPMENT</h3>
                                 <p>Hinter Zuckerede steckt Katharina Albrecht, die sich mit ihrem jungen Unternehmen als freie Traurednerin für zukünftige Brautpaare selbstständig gemacht hat.</p>
                                 <p>Mit der Webseite sollte eine repräsentative Zentrale und Kontaktstelle für das junge Unternehmen geschaffen werden. Ein sympathisches und gleichzeitig dynamisches Design waren hierbei entscheidende Faktoren, die in enger Abstimmung mit Katharina entwickelt und umgesetzt wurden.</p>
-                                <p><i class="fab fa-html5"></i><i class="fab fa-css3"></i><i class="fab fa-php"></i><i class="fab fa-bootstrap"></i><i class="fab fa-js"></i></p>
+                                <p class="mt-3"><i class="fab fa-html5"></i><i class="fab fa-css3"></i><i class="fab fa-php"></i><i class="fab fa-bootstrap"></i><i class="fab fa-js"></i></p>
                                 <p>Bei der Umsetzung kam die Bootstrap Bibliothek in Verbindung mit JQuery zur Darstellung von dynamischen Inhalten und Animationen zum Einsatz.</p>
                                 <a class="btn btn-primary mt-2 mb-5" href="https://www.zuckerrede.de" role="button">SEITE ANSEHEN</a>
                             </div>
                         </div>
-                        <div class="row px-1 d-none d-lg-flex">
+                        <div class="row px-1 d-none d-lg-flex animateblock left">
+                            <div class="testimonial-background"><i class="fas fa-quote-right m-0 p-0"></i></div>
                             <div class="col-3 col-md-2 p-0 pl-3">
                                 <img class="img-fluid rounded-circle imgTestimonial" src="assets/img/KatharinaAlbrecht_testimonial_200x200.jpg" alt="" />
                             </div>
@@ -185,11 +190,13 @@
                         </div>
                     </div>
                     <div class="projectImages col-12 col-lg-5 d-flex flex-column justify-content-start align-items-end mt-0 mb-5 my-lg-0">
+                        <div class="position-absolute projectImageBackground"></div>
                         <img class="img-fluid projectImageNotebook animateblock bottom" src="assets/img/Zuckerrede_notebook_800x450.png" alt="" />
                         <img class="img-fluid projectImageTablet animateblock bottom" src="assets/img/Zuckerrede_tablet_400x553.png" alt="" />
                         <img class="img-fluid projectImageMobile animateblock bottom" src="assets/img/Zuckerrede_mobile_300x594.png" alt="" />
                     </div>
-                    <div class="row px-1 d-lg-none animateblock left">
+                    <div class="row px-1 d-lg-none animateblock left mt-5 mx-0">
+                        <div class="testimonial-background"><i class="fas fa-quote-right m-0 p-0"></i></div>
                         <div class="col-3 col-md-2 p-0 pl-3 text-right">
                             <img class="img-fluid rounded-circle imgTestimonial" src="assets/img/KatharinaAlbrecht_testimonial_200x200.jpg" alt="" />
                         </div>
@@ -205,7 +212,7 @@
 
             <!-- #MFA mal anders -->
             <div class="container d-flex align-items-center project" id="mfaMalAnders">
-                <div class="row d-flex align-items-start px-md-5">
+                <div class="row d-flex align-items-center px-md-5">
                     <div class="col-12 col-lg-7 d-flex flex-column align-items-start px-lg-5" id="mfaMalAndersLeft">
                         <div class="row">
                             <div class="col-12">
@@ -213,12 +220,13 @@
                                 <h3 class="h6">DESIGN | WEBDEVELOPMENT</h3>
                                 <p>MFA mal anders ist ein Karriereportal für medizinische Fachangestellte. Die Webseite bietet ein breites Portfolio an Informationen rund um die Themen Fort- und Weiterbildung sowie eine Jobbörse als zentrales Element.</p>
                                 <p>Die Webseite sollte ein firsches, modernes Design und ein einfaches Interface zum Bereitstellen neuer Inhalte mitbringen. Außerdem sollte eine Möglichkeit geschaffen werden, Stellenanzeigen effizient einzusammeln und zu veröffentlichen.</p>
-                                <p><i class="fab fa-html5"></i><i class="fab fa-css3"></i><i class="fab fa-php"></i><i class="fab fa-wordpress"></i><i class="fab fa-elementor"></i></p>
-                                <p>Bei der Umsetzung kam das Content-Management-System WordPress in Verbindung mit verschiedenen PlugIns und dem Page Builder Elementor zum Einsatz. Mittels PHP wurden verschiedene individuelle Anpassungen vorgenommen.</p>
+                                <p class="mt-3"><i class="fab fa-html5"></i><i class="fab fa-css3"></i><i class="fab fa-php"></i><i class="fab fa-wordpress"></i><i class="fab fa-elementor"></i></p>
+                                <p>Bei der Umsetzung kam das Content-Management-System WordPress in Verbindung mit verschiedenen PlugIns und dem Page Builder Elementor zum Einsatz. Mittels PHP wurden weitere individuelle Anpassungen vorgenommen.</p>
                                 <a class="btn btn-primary mt-2 mb-5" href="https://www.mfa-mal-anders.de" role="button">SEITE ANSEHEN</a>
                             </div>
                         </div>
-                        <div class="row px-1 d-none d-lg-flex">
+                        <div class="row px-1 d-none d-lg-flex animateblock left">
+                            <div class="testimonial-background"><i class="fas fa-quote-right m-0 p-0"></i></div>
                             <div class="col-3 col-md-2 p-0 pl-3">
                                 <img class="img-fluid rounded-circle imgTestimonial" src="assets/img/KristinMaurach_testimonial_200x200.jpg" alt="" />
                             </div>
@@ -231,11 +239,13 @@
                         </div>
                     </div>
                     <div class="projectImages col-12 col-lg-5 d-flex flex-column justify-content-start align-items-end mt-0 mb-5 my-lg-0">
+                        <div class="position-absolute projectImageBackground"></div>
                         <img class="img-fluid projectImageNotebook animateblock bottom" src="assets/img/MfaMalAnders_notebook_800x450.png" alt="" />
                         <img class="img-fluid projectImageTablet animateblock bottom" src="assets/img/MfaMalAnders_tablet_400x553.png" alt="" />
                         <img class="img-fluid projectImageMobile animateblock bottom" src="assets/img/MfaMalAnders_mobile_300x594.png" alt="" />
                     </div>
-                    <div class="row px-1 d-lg-none animateblock left">
+                    <div class="row px-1 d-lg-none animateblock left mt-5 mx-0">
+                        <div class="testimonial-background"><i class="fas fa-quote-right m-0 p-0"></i></div>
                         <div class="col-3 col-md-2 p-0 pl-3 text-right">
                             <img class="img-fluid rounded-circle imgTestimonial" src="assets/img/KristinMaurach_testimonial_200x200.jpg" alt="" />
                         </div>
@@ -251,7 +261,7 @@
         </section>
 
         <!-- #Services -->
-        <section class="container-fluid d-flex py-0" id="service">
+        <section class="container-fluid d-flex p-0" id="service">
             <div class="container d-flex align-items-center">
                 <div class="row d-flex align-items-start px-md-5">
                     <div class="col-12 col-lg-5 d-flex flex-column justify-content-start mt-0 mb-5 my-lg-0"></div>
@@ -265,7 +275,7 @@
         </section>
 
         <!-- #About -->
-        <section class="container-fluid d-flex py-0" id="about">
+        <section class="container-fluid d-flex p-0" id="about">
             <div class="container d-flex align-items-center">
                 <div class="row d-flex align-items-start px-md-5">
                     <div class="col-12 col-lg-7 d-flex flex-column align-items-start px-lg-5" id="">
@@ -279,7 +289,7 @@
         </section>
 
         <!-- #Contact -->
-        <section class="container-fluid d-flex py-5" id="contact">
+        <section class="container-fluid d-flex py-5 px-4" id="contact">
             <div class="container d-flex align-items-center">
                 <div class="row d-flex align-items-center px-md-5">
                     <div class="col-12 col-lg-6 d-flex flex-column align-items-center order-2 order-lg-1 my-3">
@@ -316,9 +326,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6 d-flex flex-column order-lg-2 px-4" id="">
+                    <div class="col-12 col-lg-6 d-flex flex-column order-lg-2 px-1 pl-md-5" id="contact-form">
                         <h2>Kontakt</h2>
-                        <h3 class="h6 text-white">GET IN TOUCH</h3>
+                        <h3 class="h6">GET IN TOUCH</h3>
                         <p>Hast Du Interesse an einer Zusammenarbeit?</p>
                         <p>Egal ob einfache Webseite oder langfristige Projekte! Melde Dich und wir besprechen Deine Ideen und Wünsche ganz unverbindlich.</p>
                         <p class="my-3">
@@ -363,7 +373,7 @@
             </div>
         </section>
 
-        <footer class="container-fluid" id="footer">
+        <footer class="container-fluid p-0" id="footer">
             <div class="py-3 d-flex d-lg-none justify-content-center" id="social">
                 <a class="p-2" href="https://www.linkedin.com/in/christopherliedtke"><i class="fab fa-linkedin fa-lg mx-2"></i>LinkedIn</a>
                 <a class="p-2" href="https://github.com/christopherliedtke"><i class="fab fa-github fa-lg mx-2"></i>GitHub</a>
