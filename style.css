@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    font-size: 15px;
 }
 
 body {
@@ -12,23 +13,34 @@ body {
 
 section {
     min-height: 100vh;
+    overflow: hidden;
 }
 
 h1,
 h2 {
     font-family: "Rasa", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 2.8em;
     color: rgb(215, 122, 101);
     margin-bottom: 0;
 }
 
+.h3-background {
+    position: absolute;
+    font-weight: 900;
+    font-size: 8vh;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.07;
+    transform: translate(-10%, -25%);
+}
+
 .h6 {
     margin-bottom: 1em;
-    letter-spacing: 3px;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
 }
 
@@ -41,40 +53,22 @@ a {
 }
 
 a:hover {
-    color: rgb(70, 85, 115);
+    color: rgba(70, 85, 115, 1);
     text-decoration: none;
 }
 
-.form-control {
-    border-radius: 5px;
-    /* border: 1px solid rgba(70, 85, 115, 0.5); */
-    -webkit-box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
-    box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
-}
-
-.form-control:focus {
-    border: 2px solid rgb(215, 122, 101);
-    box-shadow: none;
-}
-
-.form-group label {
-    font-size: 0.9em;
-}
-
-/* .a-primary {
-    color: rgb(70, 85, 115);
-}
-
-.a-primary:hover {
-    color: rgba(70, 85, 115, 0.7);
-} */
-
 .text-white {
-    color: rgb(252, 251, 250);
+    color: rgb(252, 251, 250) !important;
+}
+
+.bg-dark {
+    background-color: rgb(27, 45, 82) !important;
 }
 
 /* #Navbar */
+#navbar1 {
+    transition: linear 0.3s;
+}
 
 nav {
     font-family: "Lato", sans-serif;
@@ -82,6 +76,8 @@ nav {
 
 .navbar-nav .nav-link {
     color: rgba(70, 85, 115, 1);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 .navbar-nav .nav-link.active,
@@ -89,70 +85,13 @@ nav {
     color: rgba(70, 85, 115, 0.7);
 }
 
-#navbar1 {
-    transition: linear 0.3s;
-}
-
+/* #Sidebar */
 #navbar2 {
     top: 50%;
     transform: translateY(-50%);
-    /* background-color: rgba(0, 0, 0, 0.03); */
     border-radius: 5px;
 }
 
-/* #Animate navbar menu icon */
-.ui-hamburger-05 {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 35px;
-    height: 30px;
-    border: none;
-    position: relative;
-    background: linear-gradient(to bottom, rgb(70, 85, 115), rgb(70, 85, 115));
-    background-size: 0 0;
-    background-repeat: no-repeat;
-    background-position: center center;
-    cursor: pointer;
-}
-
-.ui-hamburger-05:before,
-.ui-hamburger-05:after {
-    height: 2px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    background-color: rgb(70, 85, 115);
-    content: "";
-    transition: transform 0.2s ease;
-}
-
-.ui-hamburger-05:before {
-    top: 10px;
-}
-
-.ui-hamburger-05:after {
-    bottom: 10px;
-}
-
-.ui-hamburger-05:not(.collapsed) {
-    background-size: 0 0;
-}
-
-.ui-hamburger-05:not(.collapsed):before,
-.ui-hamburger-05:not(.collapsed):after {
-    transition-delay: 0.1s;
-}
-
-.ui-hamburger-05:not(.collapsed):before {
-    transform: translateY(4px) rotate(45deg);
-}
-
-.ui-hamburger-05:not(.collapsed):after {
-    transform: translateY(-4px) rotate(-45deg);
-}
-
-/* #Sidebar */
 #navbar2 .navbar-nav .nav-link {
     color: rgba(70, 85, 115, 0.7);
 }
@@ -188,10 +127,10 @@ nav {
     transition: ease 0.3s;
 }
 
-.btn-primary:disabled {
+/* .btn-primary:disabled {
     background: lightgray;
     border: none;
-}
+} */
 
 .btn-primary:hover,
 .btn-primary:active,
@@ -222,7 +161,7 @@ nav {
 }
 
 #home .bold {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 #homeImage {
@@ -242,7 +181,7 @@ nav {
 
 .project i {
     margin-top: 1em;
-    margin-right: 6px;
+    margin-right: 0.4em;
 }
 
 .project blockquote p {
@@ -358,10 +297,6 @@ nav {
 }
 
 /* #Contact */
-#contact {
-    background-color: rgb(27, 45, 82);
-}
-
 /* #Contact-form */
 
 #contact-form p,
@@ -383,6 +318,23 @@ nav {
 
 #contactFormSuccessMessage {
     border-radius: 50px;
+}
+
+.form-control {
+    border-radius: 5px;
+    /* border: 1px solid rgba(70, 85, 115, 0.5); */
+    -webkit-box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+    border: 2px solid rgb(215, 122, 101);
+    box-shadow: none;
+}
+
+.form-group label {
+    font-size: 0.9em;
 }
 
 .form-check {
@@ -497,9 +449,6 @@ nav {
 }
 
 /* #Footer */
-#footer {
-    background-color: rgb(27, 45, 82);
-}
 
 /* #Animations */
 .animateblock {
@@ -522,7 +471,6 @@ nav {
 }
 
 .animateblock.width-left#homeImage {
-    /* width: 25px; */
     transform: scale(0.2) translateX(-250%);
 }
 
@@ -555,6 +503,58 @@ nav {
     transform: translate(-65%, 80%);
 }
 
+/* #Animate navbar menu icon */
+.ui-hamburger-05 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 35px;
+    height: 30px;
+    border: none;
+    position: relative;
+    background: linear-gradient(to bottom, rgb(70, 85, 115), rgb(70, 85, 115));
+    background-size: 0 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.ui-hamburger-05:before,
+.ui-hamburger-05:after {
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: rgb(70, 85, 115);
+    content: "";
+    transition: transform 0.2s ease;
+}
+
+.ui-hamburger-05:before {
+    top: 10px;
+}
+
+.ui-hamburger-05:after {
+    bottom: 10px;
+}
+
+.ui-hamburger-05:not(.collapsed) {
+    background-size: 0 0;
+}
+
+.ui-hamburger-05:not(.collapsed):before,
+.ui-hamburger-05:not(.collapsed):after {
+    transition-delay: 0.1s;
+}
+
+.ui-hamburger-05:not(.collapsed):before {
+    transform: translateY(4px) rotate(45deg);
+}
+
+.ui-hamburger-05:not(.collapsed):after {
+    transform: translateY(-4px) rotate(-45deg);
+}
+
 /* #Remove focus ring */
 body:not(.user-is-tabbing) button:focus,
 body:not(.user-is-tabbing) input:focus,
@@ -577,7 +577,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: rgb(70, 85, 115);
     border-radius: 10px;
-    /* outline: 1px solid rgb(70, 85, 115); */
 }
 
 /* #Checkbox style */
