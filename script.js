@@ -13,10 +13,32 @@
         // jumpToSection();
     });
 
+    // #Toggle button on click
+    var toggleButton = $('.toggle-button');
+    var flipCard = $('.flip-card');
+
+    toggleButton.click(function() {
+        toggleButton.each(function() {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active');
+                $(this).blur();
+            } else {
+                $(this).addClass('active');
+            }
+        });
+        flipCard.each(function() {
+            if ($(this).hasClass('hidden')) {
+                $(this).removeClass('hidden');
+            } else {
+                $(this).addClass('hidden');
+            }
+        });
+    });
+
     // #Collapse navbar menu after click
     function collapseNavbarAfterClick() {
-        $(".navbar-nav>a").on("click", function() {
-            $(".navbar-collapse").collapse("hide");
+        $('.navbar-nav>a').on('click', function() {
+            $('.navbar-collapse').collapse('hide');
         });
     }
 
@@ -26,24 +48,24 @@
     function changeNavbar() {
         var currentPositionY = $(document).scrollTop();
         // console.log(currentPositionY);
-        var heightNavbar = $("#navbar1").outerHeight();
+        var heightNavbar = $('#navbar1').outerHeight();
 
         if (currentPositionY >= previousPositionY) {
-            $("#navbar1").css("top", -heightNavbar);
+            $('#navbar1').css('top', -heightNavbar);
         } else {
-            $("#navbar1").css("top", 0);
+            $('#navbar1').css('top', 0);
         }
 
         if (currentPositionY > heightNavbar + 10) {
-            $("#navbar1").css("background", "rgba(252, 251, 250, 0.98)");
+            $('#navbar1').css('background', 'rgba(252, 251, 250, 0.98)');
         } else {
-            $("#navbar1").css("background", "rgba(0, 0, 0, 0)");
+            $('#navbar1').css('background', 'rgba(0, 0, 0, 0)');
         }
         previousPositionY = currentPositionY;
     }
 
     // #Animate elements with .animateblock
-    var $animatedElements = $(".animateblock");
+    var $animatedElements = $('.animateblock');
 
     function animateBlock() {
         // Get window height, document height, current distande from top of window
@@ -59,37 +81,37 @@
             var elementOffsetTop = $element.offset().top;
             // console.log(elementOffsetTop);
 
-            if ($element.hasClass("animated") && winTop > elementOffsetTop - windowHeight * 0.75) {
+            if ($element.hasClass('animated') && winTop > elementOffsetTop - windowHeight * 0.75) {
                 return true;
-            } else if ($element.hasClass("animated") && winTop < elementOffsetTop - windowHeight * 0.75) {
-                $element.removeClass("animated");
+            } else if ($element.hasClass('animated') && winTop < elementOffsetTop - windowHeight * 0.75) {
+                $element.removeClass('animated');
                 return true;
             } else if (winTop > elementOffsetTop - windowHeight * 0.75) {
-                $element.addClass("animated");
+                $element.addClass('animated');
             }
         });
     }
 
     // #Form submission w/o redirecting
     function formSubmissionWORedirect() {
-        $("#contactForm").submit(function() {
+        $('#contactForm').submit(function() {
             var formdata = $(this).serialize();
             $.ajax({
-                type: "POST",
-                url: "https://formspree.io/xdozaolp",
+                type: 'POST',
+                url: 'https://formspree.io/xdozaolp',
                 data: { message: formdata },
-                dataType: "json",
+                dataType: 'json',
                 success: function() {
                     // Reset form after submission
-                    $("#contactForm")[0].reset();
-                    $("#contactFormSubmit").blur();
-                    $("#contactFormErrorMessage").css("display", "none");
-                    $("#contactFormSuccessMessage").css("display", "inline-block");
+                    $('#contactForm')[0].reset();
+                    $('#contactFormSubmit').blur();
+                    $('#contactFormErrorMessage').css('display', 'none');
+                    $('#contactFormSuccessMessage').css('display', 'inline-block');
                 },
                 error: function(error) {
                     console.log(error);
 
-                    $("#contactFormErrorMessage").css("display", "inline-block");
+                    $('#contactFormErrorMessage').css('display', 'inline-block');
                 }
             });
             return false;

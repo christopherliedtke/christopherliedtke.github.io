@@ -61,8 +61,8 @@
                         <ul class="navbar-nav ml-auto align-items-end">
                             <a class="nav-item nav-link px-3" href="#home">Home</a>
                             <a class="nav-item nav-link px-3" href="#projects">Projekte</a>
-                            <a class="nav-item nav-link px-3" href="#service">Leistungen</a>
-                            <a class="nav-item nav-link px-3" href="#about">Über</a>
+                            <a class="nav-item nav-link px-3" href="#service">Ich biete</a>
+                            <a class="nav-item nav-link px-3" href="#about">Über mich</a>
                             <a class="nav-item nav-link px-3" href="#contact">Kontakt</a>
                         </ul>
                     </div>
@@ -85,6 +85,7 @@
         <div class="m-3 px-5 py-3 position-fixed d-none d-lg-block" id="social">
             <a class="p-2" href="https://www.linkedin.com/in/christopherliedtke"><i class="fab fa-linkedin fa-lg mx-2"></i>LinkedIn</a>
             <a class="p-2" href="https://github.com/christopherliedtke"><i class="fab fa-github fa-lg mx-2"></i>GitHub</a>
+            <a class="p-2" href="https://angel.co/christopher-liedtke"><i class="fab fa-angellist fa-lg mx-2"></i>Angellist</a>
         </div>
 
         <!-- #Home -->
@@ -95,11 +96,12 @@
                         <img class="img-fluid animateblock width-left" id="homeImage" src="assets/img/ChristopherLiedtke_500x500.jpg" alt="" />
                     </div>
                     <div class="col-12 col-lg-8 d-flex flex-column justify-content-center justify-content-md-start justify-content-lg-center align-items-start mx-5 mx-lg-0">
-                        <h1>
-                            Hi! <span class="bold">Ich bin Chris,</span> <br />
-                            professioneller <span class="highlight bold">Webdeveloper</span> aus Leidenschaft.
+                        <h1 class="animateblock right">
+                            Hi! <span class="bold">Ich bin Chris &ndash;</span> <br />
+                            professioneller <span class="highlight bold">Webentwickler</span> <br />
+                            aus Leidenschaft.
                         </h1>
-                        <a class="btn btn-primary my-3" href="#projects" role="button">MEINE PROJEKTE</a>
+                        <a class="btn btn-primary my-3 animateblock bottom" href="#projects" role="button">MEINE PROJEKTE</a>
                     </div>
                 </div>
             </div>
@@ -263,13 +265,92 @@
         <!-- #Services -->
         <section class="container-fluid d-flex p-0" id="service">
             <div class="container d-flex align-items-center">
-                <div class="row d-flex align-items-start px-md-5">
-                    <div class="col-12 col-lg-5 d-flex flex-column justify-content-start mt-0 mb-5 my-lg-0"></div>
-                    <div class="col-12 col-lg-7 d-flex flex-column align-items-start px-lg-5" id="">
+                <div class="row d-flex align-items-center px-2 px-md-5">
+                    <!-- LEFT SIDE -->
+                    <div class="col-12 col-lg-5 order-2 order-lg-1 mb-5 my-lg-5">
+                        <div class="row flip-card card-front" id="advantages">
+                            <div class="d-flex flex-column justify-content-around">
+                                <div class="d-flex p-0">
+                                    <div class="i-container">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="bold highlight d-inline-block">Arbeite mit einem Profi</h4>
+                                        <p>Deine Webseite vom <span class="bold">ausgebildeten Profi</span> mit langjähriger Erfahrung im Projektmanagement!</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex p-0">
+                                    <div class="i-container">
+                                        <i class="fas fa-gift"></i>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="bold highlight d-inline-block">Alles aus einer Hand</h4>
+                                        <p>Auf Wunsch organisiere ich das <span class="bold">komplette Projekt</span> vom Design bis zur fertigen Webseite und darüber hinaus!</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex p-0">
+                                    <div class="i-container">
+                                        <i class="fab fa-grav "></i>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="bold highlight d-inline-block">Modernste Technologien</h4>
+                                        <p>Du möchtest eine <span class="bold">beeindruckende Webseite</span> nach dem neusten Stand der Technik? Dann bist Du hier genau richtig!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row flip-card card-back hidden" id="techStack">
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/HTML5_logo_and_wordmark.svg" alt="" width="50px" class="img-fluid" />
+                            </div>
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/CSS3_logo_and_wordmark.svg" alt="" width="50px" class="img-fluid" />
+                            </div>
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/Javascript-shield.svg" alt="" width="50px" class="img-fluid" />
+                            </div>
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/JQuery-Logo.svg" alt="" width="50px" class="img-fluid" />
+                            </div>
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/React.svg" alt="" width="50px" class="img-fluid" />
+                            </div>
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/Vue.js_Logo_2.svg" alt="" width="50px" class="img-fluid" />
+                            </div>
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/Node.js_logo.svg" alt="" width="50px" class="img-fluid" />
+                            </div>
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/Postgresql_elephant.svg" alt="" width="50px" class="img-fluid" />
+                            </div>
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/Redis_Logo.svg" alt="" width="50px" class="img-fluid" />
+                            </div>
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/Wordpress-Logo.svg" alt="" width="50px" class="img-fluid" />
+                            </div>
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/Bootstrap_logo.svg" alt="" width="50px" class="img-fluid" />
+                            </div>
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/Octicons-mark-github.svg" alt="" width="50px" class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- RIGHT SIDE -->
+                    <div class="col-12 col-lg-7 d-flex flex-column align-items-start px-lg-5 order-1 order-lg-2 my-5" id="">
                         <h2>Leistungen</h2>
                         <h3 class="h3-background">Leistungen</h3>
-                        <h3 class="h6">COMING SOON</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus beatae libero optio, eius repellat, sunt corporis, omnis suscipit reiciendis voluptate obcaecati quisquam est molestias cupiditate.</p>
+                        <h3 class="h6">Was ich biete</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus beatae libero optio, eius repellat, sunt corporis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sequi temporibus distinctio architecto laudantium nam quia magni, dolores corporis et dignissimos libero minima alias pariatur explicabo dolorem, autem quidem accusantium, nisi ipsum aut ipsa quos? Sunt possimus consequuntur est illum dolor rem ratione distinctio excepturi aliquid nihil.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam minima doloremque autem dolorum quas maxime aperiam dicta quo adipisci ullam.</p>
+                        <div class="mt-3">
+                            <button class="btn btn-primary m-0 toggle-button toggle-button-left active" type="button" data-toggle="" data-target=".multi-collapse" aria-expanded="false" aria-controls="">Vorteile</button><button class="btn btn-primary m-0 toggle-button toggle-button-right" type="button" data-toggle="" data-target=".multi-collapse" aria-expanded="false" aria-controls="">Technologie Stack</button>
+                            <a href="#contact" class="btn btn-primary d-none d-lg-inline-block mt-lg-2 mt-xl-0">Kontakt</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -380,6 +461,7 @@
             <div class="py-3 d-flex d-lg-none justify-content-center" id="social">
                 <a class="p-2" href="https://www.linkedin.com/in/christopherliedtke"><i class="fab fa-linkedin fa-lg mx-2"></i>LinkedIn</a>
                 <a class="p-2" href="https://github.com/christopherliedtke"><i class="fab fa-github fa-lg mx-2"></i>GitHub</a>
+                <a class="p-2" href="https://angel.co/christopher-liedtke"><i class="fab fa-angellist fa-lg mx-2"></i>Angellist</a>
             </div>
             <nav class="nav pl-4 pb-4">
                 <a class="nav-link py-1 px-4" href="#" data-toggle="modal" data-target="#dataProtection">Datenschutzerklärung</a>

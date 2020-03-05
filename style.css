@@ -6,7 +6,7 @@ html {
 body {
     margin: 0;
     background-color: rgb(252, 251, 250);
-    font-family: "Lato", sans-serif;
+    font-family: 'Lato', sans-serif;
     color: rgb(70, 85, 115);
     transition: linear 1s;
 }
@@ -18,7 +18,7 @@ section {
 
 h1,
 h2 {
-    font-family: "Rasa", sans-serif;
+    font-family: 'Rasa', sans-serif;
     font-weight: 600;
 }
 
@@ -57,6 +57,16 @@ a:hover {
     text-decoration: none;
 }
 
+.bold {
+    font-weight: 600;
+}
+
+.highlight {
+    color: rgb(252, 251, 250);
+    background-color: rgb(215, 122, 101);
+    padding: 3px 5px;
+}
+
 .text-white {
     color: rgb(252, 251, 250) !important;
 }
@@ -71,7 +81,7 @@ a:hover {
 }
 
 nav {
-    font-family: "Lato", sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .navbar-nav .nav-link {
@@ -93,7 +103,7 @@ nav {
 }
 
 #navbar2 .navbar-nav .nav-link {
-    color: rgba(70, 85, 115, 0.7);
+    color: rgba(70, 85, 115, 0.5);
 }
 
 #navbar2 .navbar-nav .nav-link.active,
@@ -124,6 +134,7 @@ nav {
     border-width: 2px;
     border-color: rgb(70, 85, 115);
     color: rgb(70, 85, 115);
+    text-transform: uppercase;
     transition: ease 0.3s;
 }
 
@@ -134,15 +145,23 @@ nav {
 
 .btn-primary:hover,
 .btn-primary:active,
-.btn-primary:focus {
+.btn-primary:focus,
+.btn-primary.active {
     background-color: transparent !important;
     border-color: rgb(215, 122, 101) !important;
     color: rgb(215, 122, 101) !important;
 }
 
+/* #Remove focus ring */
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 /* #Home */
 #home {
-    background: url("assets/img/strasseBergeImHintergrund_1980x1320.jpg") rgba(252, 251, 250, 0.9);
+    background: url('assets/img/strasseBergeImHintergrund_1980x1320.jpg') rgba(252, 251, 250, 0.9);
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center top;
@@ -152,16 +171,6 @@ nav {
     font-size: 2.5em;
     font-weight: 300;
     line-height: 1.4em;
-}
-
-#home .highlight {
-    color: rgb(252, 251, 250);
-    background-color: rgb(215, 122, 101);
-    padding: 3px 5px;
-}
-
-#home .bold {
-    font-weight: 600;
 }
 
 #homeImage {
@@ -258,7 +267,7 @@ nav {
 }
 
 #stadtUndGruenLeft {
-    background: url("assets/img/stadtundgruen_logo_v01.png") rgba(252, 251, 250, 0.95);
+    background: url('assets/img/stadtundgruen_logo_v01.png') rgba(252, 251, 250, 0.95);
     background-blend-mode: overlay;
     background-size: contain;
     background-repeat: no-repeat;
@@ -271,7 +280,7 @@ nav {
 }
 
 #zuckerredeLeft {
-    background: url("assets/img/zuckerrede_logo.png") rgba(252, 251, 250, 0.9);
+    background: url('assets/img/zuckerrede_logo.png') rgba(252, 251, 250, 0.9);
     background-blend-mode: overlay;
     background-size: contain;
     background-repeat: no-repeat;
@@ -284,7 +293,7 @@ nav {
 }
 
 #mfaMalAndersLeft {
-    background: url("assets/img/Logo_Mfamalanders_800.png") rgba(252, 251, 250, 0.96);
+    background: url('assets/img/Logo_Mfamalanders_800.png') rgba(252, 251, 250, 0.96);
     background-blend-mode: overlay;
     background-size: contain;
     background-repeat: no-repeat;
@@ -294,6 +303,54 @@ nav {
 /* #Services */
 #service {
     background-color: rgb(196, 200, 220);
+}
+
+.flip-card {
+    background-color: rgba(252, 251, 250, 0.5);
+    border-radius: 15px;
+    height: 500px;
+    padding: 2.1em;
+    backface-visibility: hidden;
+    transition: ease 1s;
+}
+
+.flip-card.hidden {
+    transform: rotateY(180deg);
+}
+
+.card-front {
+}
+
+.card-back {
+    position: absolute;
+    top: 0;
+    max-width: 100%;
+}
+
+.i-container {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    flex-basis: 60px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-items: center;
+    background-color: rgba(70, 85, 115, 1);
+    border-radius: 10px;
+    color: rgba(252, 251, 250, 1);
+    font-size: 2.6rem;
+}
+
+.toggle-button-left {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    /* border-right-width: 1px; */
+}
+
+.toggle-button-right {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    /* border-left-width: 1px; */
 }
 
 /* #Contact */
@@ -350,7 +407,7 @@ nav {
 .business-card {
     width: 40vh;
     height: calc(40vh * 54 / 86);
-    background: url("assets/img/strasseBergeImHintergrund_1980x1320.jpg") rgba(252, 251, 250, 0.9);
+    background: url('assets/img/strasseBergeImHintergrund_1980x1320.jpg') rgba(252, 251, 250, 0.9);
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center center;
@@ -436,7 +493,7 @@ nav {
 }
 
 .business-card-content h3 {
-    font-family: "Rasa", sans-serif;
+    font-family: 'Rasa', sans-serif;
     font-weight: 400;
     font-size: 3vh;
     margin-bottom: 0px;
@@ -462,12 +519,30 @@ nav {
     opacity: 1;
 }
 
+.animateblock.rotateY {
+    transform: rotateY(-180deg);
+}
+
+.animateblock.rotateY.animated {
+    transform: rotateY(0deg);
+}
+
 .animateblock.left {
     transform: translateX(-30%);
 }
 
 .animateblock.left.animated {
     transform: translateX(0%);
+    transition-delay: 0.3s;
+}
+
+.animateblock.right {
+    transform: translateX(30%);
+}
+
+.animateblock.right.animated {
+    transform: translateX(0%);
+    transition-delay: 0.3s;
 }
 
 .animateblock.width-left#homeImage {
@@ -476,7 +551,7 @@ nav {
 
 .animateblock.width-left.animated#homeImage {
     transform: scale(1) translateX(0%);
-    transition-delay: 1s;
+    transition-delay: 0.5s;
 }
 
 .animateblock.bottom {
@@ -485,6 +560,7 @@ nav {
 
 .animateblock.bottom.animated {
     transform: translateY(0%);
+    transition-delay: 0.3s;
 }
 
 .animateblock.bottom.projectImageTablet {
@@ -526,7 +602,7 @@ nav {
     position: absolute;
     left: 0;
     background-color: rgb(70, 85, 115);
-    content: "";
+    content: '';
     transition: transform 0.2s ease;
 }
 
@@ -555,15 +631,6 @@ nav {
     transform: translateY(-4px) rotate(-45deg);
 }
 
-/* #Remove focus ring */
-body:not(.user-is-tabbing) button:focus,
-body:not(.user-is-tabbing) input:focus,
-body:not(.user-is-tabbing) select:focus,
-body:not(.user-is-tabbing) a:focus,
-body:not(.user-is-tabbing) textarea:focus {
-    outline: none;
-}
-
 /* #Scrollbar */
 body::-webkit-scrollbar {
     width: 0.7em;
@@ -580,40 +647,40 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* #Checkbox style */
-input[type="checkbox"] {
+input[type='checkbox'] {
     display: none;
 }
-input[type="checkbox"] + label {
+input[type='checkbox'] + label {
     width: 32px;
     height: 20px;
     border-radius: 20px;
     border: 2px solid #ddd;
     background-color: rgb(215, 122, 101);
     display: inline-block;
-    content: "";
+    content: '';
     /* float: left; */
     margin-right: 5px;
     transition: background-color 0.5s linear;
     margin-top: 10px;
 }
-input[type="checkbox"] + label:hover {
+input[type='checkbox'] + label:hover {
     cursor: pointer;
 }
-input[type="checkbox"] + label::before {
+input[type='checkbox'] + label::before {
     width: 16px;
     height: 16px;
     border-radius: 20px;
     background-color: #fff;
     display: block;
-    content: "";
+    content: '';
     /* float: left; */
     margin-right: 5px;
     transition: margin 0.1s linear;
     box-shadow: 0px 0px 5px #aaa;
 }
-input[type="checkbox"]:checked + label {
+input[type='checkbox']:checked + label {
     background-color: rgb(70, 85, 115);
 }
-input[type="checkbox"]:checked + label::before {
+input[type='checkbox']:checked + label::before {
     margin: 0 0 0 12px;
 }
