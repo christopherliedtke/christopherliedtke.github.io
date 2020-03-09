@@ -72,7 +72,7 @@ a:hover {
 }
 
 .bg-dark {
-    background-color: rgb(27, 45, 82) !important;
+    background-color: rgb(19, 35, 51) !important;
 }
 
 /* #Navbar */
@@ -154,14 +154,15 @@ nav {
 
 /* #Remove focus ring */
 .btn:focus,
-.btn:active {
+.btn:active,
+.navbar-toggler:focus {
     outline: none !important;
     box-shadow: none !important;
 }
 
 /* #Home */
 #home {
-    background: url('assets/img/strasseBergeImHintergrund_1980x1320.jpg') rgba(252, 251, 250, 0.9);
+    background: url('assets/img/strasseBergeImHintergrund_1980x1320.jpg') rgba(252, 251, 250, 0.7);
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center top;
@@ -302,7 +303,7 @@ nav {
 
 /* #Services */
 #service {
-    background-color: rgb(196, 200, 220);
+    background-color: rgba(186, 206, 220, 0.5);
 }
 
 .flip-card {
