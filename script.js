@@ -118,27 +118,75 @@
         });
     }
 
-    // Jump to next/previous section on scroll
-    // var sections = $("section");
-    // var screenHeight = $(window).outerHeight();
-    // var previousPositionY2 = $(document).scrollTop();
+    // #Typewriter
+    var TypeWriter = function(txtElement, words, wait = 3000) {
+        this.txtElement = txtElement;
+        this.words = words;
+        this.txt = '';
+        this.wordIndex = 0;
+        this.wait = parseInt(wait, 10);
+        this.type();
+        this.isDeleting = false;
+    };
 
-    // function jumpToSection() {
-    //     // const currentPositionY2 = $(document).scrollTop();
-    //     // // console.log("previousPositionY2: ", previousPositionY2);
-    //     // // console.log("currentPositionY2: ", currentPositionY2);
-    //     // for (let i = 0; i < sections.length; i++) {
-    //     //     const sectionTopPosition = sections.eq(i).offset().top;
-    //     //     const sectionOuterHeight = sections.eq(i).outerHeight();
-    //     //     const sectionBottomPosition = sectionTopPosition + sectionOuterHeight;
-    //     //     if (currentPositionY2 > previousPositionY2 && sectionBottomPosition < currentPositionY2 + screenHeight && sectionBottomPosition > currentPositionY2) {
-    //     //         // console.log("section:", i);
-    //     //         $(document).scrollTop(sections.eq(i + 1).offset().top);
-    //     //     }
-    //     //     // console.log("sectionTopPosition", i, ": ", topPosition);
-    //     //     // console.log(previousPositionY);
-    //     //     // console.log("sectionOuterHeight", i, ": ", sectionOuterHeight);
-    //     // }
-    //     // previousPositionY2 = currentPositionY2;
-    // }
+    // Type Method
+    TypeWriter.prototype.type = function() {
+        // Current index of word
+        var current = this.wordIndex % this.words.length;
+        // Get full text of current word
+        var fullTxt = this.words[current];
+
+        // Check if deleting
+        if (this.isDeleting) {
+            // Remove char
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            // Add char
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        // Insert txt into element
+        this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+
+        // Initial Type Speed
+        var typeSpeed = 300;
+
+        if (this.isDeleting) {
+            typeSpeed /= 2;
+        }
+
+        // If word is complete
+        if (!this.isDeleting && this.txt === fullTxt) {
+            // Make pause at end
+            typeSpeed = this.wait;
+
+            if (this.wait === 9999) {
+                this.txtElement.firstChild.classList.remove('txt');
+                return;
+            }
+
+            // Set delete to true
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            // Move to next word
+            this.wordIndex++;
+            // Pause before start typing
+            typeSpeed = 500;
+        }
+
+        setTimeout(() => this.type(), typeSpeed);
+    };
+
+    // Init On DOM Load
+    document.addEventListener('DOMContentLoaded', init);
+
+    // Init App
+    function init() {
+        var txtElement = document.querySelector('.txt-type');
+        var words = JSON.parse(txtElement.getAttribute('data-words'));
+        var wait = txtElement.getAttribute('data-wait');
+        // Init TypeWriter
+        new TypeWriter(txtElement, words, wait);
+    }
 })();
