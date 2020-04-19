@@ -36,7 +36,7 @@
             a.src = g;
             m.parentNode.insertBefore(a, m)
             })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-            ga('create', 'UA-122030572-1', 'auto', {
+            ga('create', 'UA-122030XXX-X', 'auto', {
             'storage': 'none'
             });
             ga('set', 'displayFeaturesTask', null);
@@ -83,9 +83,9 @@
 
         <!-- #Social -->
         <div class="m-3 px-5 py-3 position-fixed d-none d-lg-block" id="social">
-            <a class="p-2" href="https://www.linkedin.com/in/christopherliedtke"><i class="fab fa-linkedin fa-lg mx-2"></i>LinkedIn</a>
-            <a class="p-2" href="https://github.com/christopherliedtke"><i class="fab fa-github fa-lg mx-2"></i>GitHub</a>
-            <a class="p-2" href="https://angel.co/christopher-liedtke"><i class="fab fa-angellist fa-lg mx-2"></i>Angellist</a>
+            <a class="p-2" target="_blank" href="https://www.linkedin.com/in/christopherliedtke"><i class="fab fa-linkedin fa-lg mx-2"></i>LinkedIn</a>
+            <a class="p-2" target="_blank" href="https://github.com/christopherliedtke"><i class="fab fa-github fa-lg mx-2"></i>GitHub</a>
+            <a class="p-2" target="_blank" href="https://angel.co/christopher-liedtke"><i class="fab fa-angellist fa-lg mx-2"></i>Angellist</a>
         </div>
 
         <!-- #Home -->
@@ -99,14 +99,9 @@
                         <h1 class="animateblock right">
                             Hi! <span class="bold">Ich bin Chris &ndash;</span> <br />
                             professioneller
-                            <!-- <span class="highlight bold">Webentwickler</span> <br /> -->
                             <span class="txt-type highlight bold" data-wait="9999" data-words='["Webentwickler"]'></span> <br />
                             aus Leidenschaft.
                         </h1>
-                        <p class=" d-none animateblock right">
-                            Ich entwickle Dir Deine maßgeschneiderte Webseite. <br />
-                            Schau doch mal durch die Auswahl meiner bisherigen Projekte und lass Dich inspirieren.
-                        </p>
                         <a class="btn btn-primary my-3 animateblock bottom" href="#projects" role="button">MEINE PROJEKTE</a>
                     </div>
                 </div>
@@ -132,7 +127,7 @@
                                 <p>Die Webseite sollte modern, übersichtlich und auf den Punkt gestaltet werden. Eine übersichtliche Darstellung der angebotenen Leistungen sowie eine einfache Möglichkeit zur Kontaktaufnahme sind die zentralen Elemente der Seite.</p>
                                 <p class="mt-3"><i class="fab fa-html5"></i><i class="fab fa-css3"></i><i class="fab fa-php"></i><i class="fab fa-bootstrap"></i><i class="fab fa-js"></i></p>
                                 <p>Bei der Umsetzung kam die Bootstrap Bibliothek in Verbindung mit JQuery zur Darstellung von dynamischen Inhalten und Animationen zum Einsatz.</p>
-                                <a class="btn btn-primary mt-2 mb-5" href="https://www.stadtundgruen.com" role="button">SEITE ANSEHEN</a>
+                                <a class="btn btn-primary mt-2 mb-5" target="_blank" href="https://www.stadtundgruen.com" role="button">SEITE ANSEHEN</a>
                             </div>
                         </div>
                         <div class="row px-1 d-none d-lg-flex animateblock left">
@@ -181,7 +176,7 @@
                                 <p>Mit der Webseite sollte eine repräsentative Zentrale und Kontaktstelle für das junge Unternehmen geschaffen werden. Ein sympathisches und gleichzeitig dynamisches Design waren hierbei entscheidende Faktoren, die in enger Abstimmung mit Katharina entwickelt und umgesetzt wurden.</p>
                                 <p class="mt-3"><i class="fab fa-html5"></i><i class="fab fa-css3"></i><i class="fab fa-php"></i><i class="fab fa-bootstrap"></i><i class="fab fa-js"></i></p>
                                 <p>Bei der Umsetzung kam die Bootstrap Bibliothek in Verbindung mit JQuery zur Darstellung von dynamischen Inhalten und Animationen zum Einsatz.</p>
-                                <a class="btn btn-primary mt-2 mb-5" href="https://www.zuckerrede.de" role="button">SEITE ANSEHEN</a>
+                                <a class="btn btn-primary mt-2 mb-5" target="_blank" href="https://www.zuckerrede.de" role="button">SEITE ANSEHEN</a>
                             </div>
                         </div>
                         <div class="row px-1 d-none d-lg-flex animateblock left">
@@ -230,7 +225,7 @@
                                 <p>Die Webseite sollte ein firsches, modernes Design und ein einfaches Interface zum Bereitstellen neuer Inhalte mitbringen. Außerdem sollte eine Möglichkeit geschaffen werden, Stellenanzeigen effizient einzusammeln und zu veröffentlichen.</p>
                                 <p class="mt-3"><i class="fab fa-html5"></i><i class="fab fa-css3"></i><i class="fab fa-php"></i><i class="fab fa-wordpress"></i><i class="fab fa-elementor"></i></p>
                                 <p>Bei der Umsetzung kam das Content-Management-System WordPress in Verbindung mit verschiedenen PlugIns und dem Page Builder Elementor zum Einsatz. Mittels PHP wurden weitere individuelle Anpassungen vorgenommen.</p>
-                                <a class="btn btn-primary mt-2 mb-5" href="https://www.mfa-mal-anders.de" role="button">SEITE ANSEHEN</a>
+                                <a class="btn btn-primary mt-2 mb-5" target="_blank" href="https://www.mfa-mal-anders.de" role="button">SEITE ANSEHEN</a>
                             </div>
                         </div>
                         <div class="row px-1 d-none d-lg-flex animateblock left">
@@ -274,17 +269,139 @@
                         WEITERE PROJEKTE
                     </button>
                 </div>
-                <div class="collapse" id="collapseMoreProjects">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="collapse w-100" id="collapseMoreProjects">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="assets/img/strasseBergeImHintergrund_1980x1320.jpg" class="d-block w-100" alt="..." />
+                            <div class="carousel-item px-2 px-md-5 active" id="travelBook">
+                                <div class="row">
+                                    <div class="col-12 col-lg-7">
+                                        <h2>Travelbook &ndash; Social Network</h2>
+                                        <h3 class="h6">Portfolio Sample Projekt</h3>
+                                        <p>Travelbook ist ein Social Network für Reisende auf der Welt, die sich miteinander verbinden und in Kontakt bleiben wollen.</p>
+                                        <p>Nutzer können sich registrieren, Informationen über sich bereit stellen, sich mich anderen Nutzern verbinden und mit anderen Nutzern in einem öffentlichen oder privaten Chat austauschen.</p>
+                                        <p class="mt-3">
+                                            <i class="fab fa-html5"></i><i class="fab fa-css3"></i><i class="fab fa-js"></i><i class="fab fa-react"></i><i><img src="/assets/img/socketio.svg" width="14.86" alt="" /></i><i class="fab fa-node-js"></i><i><img src="/assets/img/postgre.svg" width="14.86" alt="" /></i><i class="fab fa-aws"></i>
+                                        </p>
+                                        <h4>Features</h4>
+                                        <ul class="fa-ul">
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Registrierung / Login / Logout / Passwort vergessen / Account löschen
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Eigenes Profil mit Bild und Biografie
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Suche nach und Profilansicht von anderen Nutzern
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Verwaltung von Freunden und Freundschaftsanfragen
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Öffentlicher und privater Chat mit anderen Nutzern bzw. eigenen Freunden
+                                            </li>
+                                        </ul>
+                                        <a class="btn btn-primary mt-2 mb-5" target="_blank" href="https://travelbook-network.herokuapp.com/" role="button">SEITE ANSEHEN</a>
+                                        <a class="btn btn-primary mt-2 mb-5" target="_blank" href="https://github.com/christopherliedtke/social-network_travelbook" role="button"><i class="fab fa-github fa-lg"></i>GitHub</a>
+                                    </div>
+                                    <div class="other-project-images-container d-flex flex-column align-items-center justify-content-center col-12 col-lg-5">
+                                        <div class="other-project-image-container">
+                                            <img src="/assets/img/travelbook_register_800x600.jpg" alt="Travelbook - Registrierung" />
+                                        </div>
+                                        <div class="other-project-image-container">
+                                            <img src="/assets/img/travelbook_search_800x600.jpg" alt="Travelbook - Suche nach anderen Nutzern" />
+                                        </div>
+                                        <div class="other-project-image-container">
+                                            <img src="/assets/img/travelbook_chat_800x600.jpg" alt="Travelbook - Privater Chat mit anderem Nutzer" />
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/strasseBergeImHintergrund_1980x1320.jpg" class="d-block w-100" alt="..." />
+                            <div class="carousel-item px-2 px-md-5" id="mountainView">
+                                <div class="row">
+                                    <div class="col-12 col-lg-7">
+                                        <h2>MOUNTAINview &ndash; Imageboard</h2>
+                                        <h3 class="h6">Portfolio Sample Projekt</h3>
+                                        <p>MOUNTAINview ist ein Imageboard auf dem Nutzer Bilder von Bergen veröffentlichen und anschauen können.</p>
+                                        <p>Nutzer können Bilder mit Titel, Beschreibung, Urheber und Tags hochladen sowie durch die bereits hochgeladenen Bilder scrollen und diese kommentieren bzw. nach spezifischen Tags suchen.</p>
+                                        <p class="mt-3">
+                                            <i class="fab fa-html5"></i><i class="fab fa-css3"></i><i class="fab fa-js"></i><i class="fab fa-vuejs"></i><i class="fab fa-node-js"></i><i><img src="/assets/img/postgre.svg" width="14.86" alt="" /></i><i class="fab fa-aws"></i>
+                                        </p>
+                                        <h4>Features</h4>
+                                        <ul class="fa-ul">
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Hochladen von Bildern mit Titel, Beschreibung, Urheber, Tags
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Überblick sämtlicher hochgeladener Bilder
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Detailansicht einzelner Bilder inkl. Navigation zu vorherigem/nächstem Bild
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Kommentieren von Bildern
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Live Benachrichtigung über neu hochgeladene Bilder
+                                            </li>
+                                        </ul>
+                                        <a class="btn btn-primary mt-2 mb-5" target="_blank" href="https://github.com/christopherliedtke/imageboard_mountainview" role="button"><i class="fab fa-github fa-lg"></i>GitHub</a>
+                                    </div>
+                                    <div class="other-project-images-container d-flex flex-column align-items-center justify-content-center col-12 col-lg-5">
+                                        <div class="other-project-image-container">
+                                            <img src="/assets/img/mountainView_home_800x600.jpg" alt="MountainView - Übersicht der Bilder" />
+                                        </div>
+                                        <div class="other-project-image-container">
+                                            <img src="/assets/img/mountainView_modal_800x600.jpg" alt="MountainView - Bild Detailansicht mit weiteren Informationen" />
+                                        </div>
+                                        <div class="other-project-image-container">
+                                            <img src="/assets/img/mountainView_byTag_800x600.jpg" alt="MountainView - Übersicht der Bilder nach spefizischem Tag" />
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/strasseBergeImHintergrund_1980x1320.jpg" class="d-block w-100" alt="..." />
+                            <div class="carousel-item px-2 px-md-5" id="freeOrcas">
+                                <div class="row">
+                                    <div class="col-12 col-lg-7">
+                                        <h2>Free Orcas &ndash; Petition</h2>
+                                        <h3 class="h6">Portfolio Sample Projekt</h3>
+                                        <p>Free Orcas ist eine Petition mit deren Hilfe Nutzer durch ihre digitale Unterschrift zur Befreiung von Orcas aufrufen.</p>
+                                        <p>Nutzer können sich mit ihren Daten registrieren und mittels Maus oder Berührung auf einem mobilen Gerät digital unterzeichnen. Nach der Unterschrift können Nutzer sehen, welche anderen Nutzer ebenfalls unterzeichnet haben (optional nach Stadt gefiltert).</p>
+                                        <p class="mt-3">
+                                            <i class="fab fa-html5"></i><i class="fab fa-css3"></i><i class="fab fa-js"></i><i class="fab fa-node-js"></i><i><img src="/assets/img/postgre.svg" width="14.86" alt="" /></i>
+                                        </p>
+                                        <h4>Features</h4>
+                                        <ul class="fa-ul">
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Registrierung / Login / Logout / Account löschen
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Anlegen und bearbeiten des eigenen Nutzerprofils (Name, Passwort, Stadt, Alter, Webseite)
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Digitales Unterzeichnen per Maus oder Berührung inkl. Entfernen der Unterschrift
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Zugriff auf Informationen zu weiteren Unterzeichnern nur bei eigenem Unterzeichnen
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Unterzeichner nach Stadt filtern und optionale Verlinkung zu deren Webseite
+                                            </li>
+                                        </ul>
+                                        <a class="btn btn-primary mt-2 mb-5" target="_blank" href="http://free-willy.herokuapp.com/" role="button">SEITE ANSEHEN</a>
+                                        <a class="btn btn-primary mt-2 mb-5" target="_blank" href="https://github.com/christopherliedtke/petition_free-orcas" role="button"><i class="fab fa-github fa-lg"></i>GitHub</a>
+                                    </div>
+                                    <div class="other-project-images-container d-flex flex-column align-items-center justify-content-center col-12 col-lg-5">
+                                        <div class="other-project-image-container">
+                                            <img src="/assets/img/freeOrcas_register_800x600.jpg" alt="Free Orcas - Registrierung" />
+                                        </div>
+                                        <div class="other-project-image-container">
+                                            <img src="/assets/img/freeOrcas_signature_800x600.jpg" alt="Free Orcas - Digitale Unterschrift" />
+                                        </div>
+                                        <div class="other-project-image-container">
+                                            <img src="/assets/img/freeOrcas_signersByCity_800x600.jpg" alt="Free Orcas - Liste weiterer Unterzeichner nach Stadt" />
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -328,7 +445,7 @@
                                 </div>
                                 <div class="d-flex p-0">
                                     <div class="i-container">
-                                        <i class="fab fa-react "></i>
+                                        <i class="fab fa-react"></i>
                                     </div>
                                     <div class="ml-4">
                                         <h4 class="bold highlight d-inline-block">Moderne Technologien</h4>
@@ -503,10 +620,10 @@
                                 <p style="font-size: smaller;">Ich habe die <a href="#" data-toggle="modal" data-target="#dataProtection">Datenschutzerklärung</a> zur Kenntnis genommen. Ich stimme zu, dass meine Angaben zur Kontaktaufnahme und für Rückfragen dauerhaft gespeichert werden.</p>
                             </div>
                             <button type="submit" value="Send" class="btn btn-primary" id="contactFormSubmit">SENDEN</button>
-                            <div class="alert alert-success m-2" id="contactFormSuccessMessage" role="alert" style="display: none">
+                            <div class="alert alert-success m-2" id="contactFormSuccessMessage" role="alert" style="display: none;">
                                 Danke für Deine Nachricht!
                             </div>
-                            <div class="alert alert-danger my-2" id="contactFormErrorMessage" role="alert" style="display: none">
+                            <div class="alert alert-danger my-2" id="contactFormErrorMessage" role="alert" style="display: none;">
                                 Es ist leider ein Fehler aufgetreten. Bitte versuche es später noch einmal oder sende mir direct eine E-Mail.
                             </div>
                         </form>

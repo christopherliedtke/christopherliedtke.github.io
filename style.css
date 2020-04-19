@@ -144,7 +144,6 @@ nav {
 } */
 
 .btn-primary:hover,
-.btn-primary:active,
 .btn-primary:focus,
 .btn-primary.active {
     background-color: transparent !important;
@@ -199,6 +198,10 @@ nav {
     margin-right: 0.4em;
 }
 
+#moreProjects i {
+    margin-right: 0.4em;
+}
+
 .project blockquote p {
     font-size: 0.95rem;
 }
@@ -230,6 +233,9 @@ nav {
     height: 100%;
     border-radius: 5px;
     opacity: 0.8;
+    -webkit-box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 #stadtUndGruen .projectImageBackground {
@@ -306,6 +312,60 @@ nav {
     background-position: center center;
 }
 
+/* #MORE PROJECTS */
+
+.carousel-inner {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 10%;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23465573' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23465573' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.other-project-images-container {
+    padding: 15px;
+}
+
+.other-project-image-container {
+    padding: 5px;
+}
+
+.other-project-image-container img {
+    /* height: 150px; */
+    width: 95%;
+    max-width: 250px;
+    border-radius: 5px;
+    object-fit: contain;
+    -webkit-box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* #Travelbook */
+#travelBook h2 {
+    color: rgb(44, 166, 161);
+}
+
+/* #MOUNTAINview */
+#mountainView h2 {
+    color: rgb(237, 163, 47);
+}
+
+/* #freeOrcas */
+#freeOrcas h2 {
+    color: rgb(224, 176, 128);
+}
+
 /* #Services */
 #service {
     background-color: rgba(186, 206, 220, 0.5);
@@ -324,8 +384,8 @@ nav {
     transform: rotateY(180deg);
 }
 
-.card-front {
-}
+/* .card-front {
+} */
 
 .card-back {
     position: absolute;

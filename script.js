@@ -1,13 +1,13 @@
-(function() {
-    $(document).ready(function() {
+(function () {
+    $(document).ready(function () {
         formSubmissionWORedirect();
         collapseNavbarAfterClick();
         animateBlock();
     });
 
-    $(window).resize(function() {});
+    $(window).resize(function () {});
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         changeNavbar();
         animateBlock();
         // jumpToSection();
@@ -17,8 +17,8 @@
     var toggleButton = $('.toggle-button');
     var flipCard = $('.flip-card');
 
-    toggleButton.click(function() {
-        toggleButton.each(function() {
+    toggleButton.click(function () {
+        toggleButton.each(function () {
             if ($(this).hasClass('active')) {
                 $(this).removeClass('active');
                 $(this).blur();
@@ -26,7 +26,7 @@
                 $(this).addClass('active');
             }
         });
-        flipCard.each(function() {
+        flipCard.each(function () {
             if ($(this).hasClass('hidden')) {
                 $(this).removeClass('hidden');
             } else {
@@ -37,7 +37,7 @@
 
     // #Collapse navbar menu after click
     function collapseNavbarAfterClick() {
-        $('.navbar-nav>a').on('click', function() {
+        $('.navbar-nav>a').on('click', function () {
             $('.navbar-collapse').collapse('hide');
         });
     }
@@ -75,7 +75,7 @@
         // console.log(winTop);
 
         // loop through each item to check when it animates
-        $animatedElements.each(function() {
+        $animatedElements.each(function () {
             var $element = $(this);
             // Get element's distance from top of page in pixels
             var elementOffsetTop = $element.offset().top;
@@ -94,32 +94,32 @@
 
     // #Form submission w/o redirecting
     function formSubmissionWORedirect() {
-        $('#contactForm').submit(function() {
+        $('#contactForm').submit(function () {
             var formdata = $(this).serialize();
             $.ajax({
                 type: 'POST',
                 url: 'https://formspree.io/xdozaolp',
                 data: { message: formdata },
                 dataType: 'json',
-                success: function() {
+                success: function () {
                     // Reset form after submission
                     $('#contactForm')[0].reset();
                     $('#contactFormSubmit').blur();
                     $('#contactFormErrorMessage').css('display', 'none');
                     $('#contactFormSuccessMessage').css('display', 'inline-block');
                 },
-                error: function(error) {
+                error: function (error) {
                     console.log(error);
 
                     $('#contactFormErrorMessage').css('display', 'inline-block');
-                }
+                },
             });
             return false;
         });
     }
 
     // #Typewriter
-    var TypeWriter = function(txtElement, words, wait = 3000) {
+    var TypeWriter = function (txtElement, words, wait = 3000) {
         this.txtElement = txtElement;
         this.words = words;
         this.txt = '';
@@ -130,7 +130,7 @@
     };
 
     // Type Method
-    TypeWriter.prototype.type = function() {
+    TypeWriter.prototype.type = function () {
         // Current index of word
         var current = this.wordIndex % this.words.length;
         // Get full text of current word
@@ -183,10 +183,12 @@
 
     // Init App
     function init() {
-        var txtElement = document.querySelector('.txt-type');
-        var words = JSON.parse(txtElement.getAttribute('data-words'));
-        var wait = txtElement.getAttribute('data-wait');
-        // Init TypeWriter
-        new TypeWriter(txtElement, words, wait);
+        setTimeout(function () {
+            var txtElement = document.querySelector('.txt-type');
+            var words = JSON.parse(txtElement.getAttribute('data-words'));
+            var wait = txtElement.getAttribute('data-wait');
+            // Init TypeWriter
+            new TypeWriter(txtElement, words, wait);
+        }, 2000);
     }
 })();
