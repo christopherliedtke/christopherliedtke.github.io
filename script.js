@@ -191,4 +191,9 @@
             new TypeWriter(txtElement, words, wait);
         }, 2000);
     }
+
+    // Initialize Bootstrap tooltips
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
 })();
