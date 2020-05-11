@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Rasa:300,600&display=swap" rel="stylesheet" />
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/359e13dbb2.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+        <!-- My Stylesheet -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/Logo_CL_64x64.png" />
+
+        <!-- Meta Title -->
+        <title>Full Stack Webdeveloper &ndash; Christopher Liedtke</title>
+
+        <!-- Meta description -->
+        <meta name="description" content="Your Website made by a Professional | Full Stack Web Developer &ndash; Christoper Liedtke" />
+
+        <!-- Google Analytics -->
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                (i[r] =
+                    i[r] ||
+                    function () {
+                        (i[r].q = i[r].q || []).push(arguments);
+                    }),
+                    (i[r].l = 1 * new Date());
+                (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-122030572-5', 'auto', {
+                storage: 'none',
+            });
+            ga('set', 'displayFeaturesTask', null);
+            ga('set', 'anonymizeIp', true);
+            ga('send', 'pageview');
+        </script>
+    </head>
+    <body data-spy="scroll" data-target="" data-offset="75">
+        <!-- #Header -->
+        <header id="home">
+            <!-- #Navbar -->
+            <nav class="navbar fixed-top navbar-expand-XX" id="navbar1">
+                <div class="container-fluid py-3 px-3 px-md-5">
+                    <!-- Menu button -->
+                    <button class="navbar-toggler ui-hamburger-05 collapsed order-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand mr-auto" href="https://christopherliedtke.github.io"><strong>CL</strong></a>
+
+                    <!-- Language Toggle -->
+                    <div class="mx-5">
+                        <a href="/">DE</a>
+                        <span> / </span>
+                        <a href="/en.html">EN</a>
+                    </div>
+
+                    <!-- Navbar links -->
+                    <div class="collapse navbar-collapse order-2" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto align-items-end">
+                            <a class="nav-item nav-link px-3" href="#home">Home</a>
+                            <a class="nav-item nav-link px-3" href="#projects">Projects</a>
+                            <a class="nav-item nav-link px-3" href="#service">Services</a>
+                            <!-- <a class="nav-item nav-link px-3" href="#about">Über mich</a> -->
+                            <a class="nav-item nav-link px-3" href="#contact">Contact</a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- #Sidebar -->
+        <nav class="navbar p-0 position-fixed d-none d-md-block" id="navbar2">
+            <ul class="navbar-nav ml-auto align-items-center">
+                <a class="nav-item nav-link p-3" href="#home"><i class="fas fa-home fa-lg"></i></a>
+                <a class="nav-item nav-link p-3" href="#projects"><i class="fas fa-desktop fa-lg"></i></a>
+                <a class="nav-item nav-link p-3" href="#service"><i class="fas fa-tasks fa-lg"></i></a>
+                <!-- <i class="nav-item nav-link p-3" href="#about"><i class="fas fa-info-circle fa-lg"></i></a> -->
+                <a class="nav-item nav-link p-3" href="#contact"><i class="fas fa-envelope fa-lg"></i></a>
+            </ul>
+        </nav>
+
+        <!-- #Social -->
+        <div class="m-3 px-5 py-3 position-fixed d-none d-lg-block" id="social">
+            <a class="p-2" target="_blank" href="https://www.linkedin.com/in/christopherliedtke"><i class="fab fa-linkedin fa-lg mx-2"></i>LinkedIn</a>
+            <a class="p-2" target="_blank" href="https://github.com/christopherliedtke"><i class="fab fa-github fa-lg mx-2"></i>GitHub</a>
+            <a class="p-2" target="_blank" href="https://angel.co/christopher-liedtke"><i class="fab fa-angellist fa-lg mx-2"></i>Angellist</a>
+        </div>
+
+        <!-- #Home -->
+        <section class="container-fluid d-flex py-3 px-0" id="home">
+            <div class="container my-3">
+                <div class="row h-100 d-flex px-md-5">
+                    <div class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center align-items-lg-start my-4">
+                        <img class="img-fluid animateblock width-left" id="homeImage" src="assets/img/christopherliedtke_filter_500x500.jpg" alt="" />
+                    </div>
+                    <div class="col-12 col-lg-8 d-flex flex-column justify-content-center justify-content-md-start justify-content-lg-center align-items-start mx-5 mx-lg-0">
+                        <h1 class="animateblock right">
+                            Hi! <span class="bold">I am Chris &ndash;</span> <br />
+                            professional
+                            <span class="txt-type highlight bold" data-wait="9999" data-words='["Web Developer"]'></span> <br />
+                            with passion.
+                        </h1>
+                        <a class="btn btn-primary my-3 animateblock bottom" href="#projects" role="button">My Projects</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- #Projects -->
+        <section class="container-fluid d-flex flex-column p-0" id="projects">
+            <!-- <div class="container d-none flex-column mt-5 d-lg-none">
+                <h2>Portfolio</h2>
+                <h3 class="h6">MEINE PROJEKTE</h3>
+            </div> -->
+
+            <!-- #Mobile Car Checker -->
+            <div class="container d-flex align-items-center project" id="mobileCarChecker">
+                <div class="row d-flex align-items-center px-md-5">
+                    <div class="col-12 col-lg-7 d-flex flex-column align-items-start px-lg-5" id="mobileCarCheckerLeft">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Mobile Car Checker</h2>
+                                <h3 class="h6">Checklist App &ndash; Second Hand Car Buying Guide</h3>
+                                <p>With Mobile Car Checker second hand cars can be checked step by step during the inspection for potential problems and money pits.</p>
+                                <p class="mt-3">
+                                    <i data-toggle="tooltip" data-placement="top" title="React.js" class="fab fa-react"></i>
+                                    <i data-toggle="tooltip" data-placement="top" title="HTML" class="fab fa-html5"></i>
+                                    <i data-toggle="tooltip" data-placement="top" title="CSS" class="fab fa-css3"></i>
+                                    <i data-toggle="tooltip" data-placement="top" title="JavaScript" class="fab fa-js"></i>
+                                    <i data-toggle="tooltip" data-placement="top" title="Node.js" class="fab fa-node-js"></i>
+                                    <i data-toggle="tooltip" data-placement="top" title="mongoDB"><img class="mb-1" src="/assets/img/mongoDB.svg" height="14.86" alt="" /></i>
+                                    <i data-toggle="tooltip" data-placement="top" title="Material UI"><img class="mb-1" src="/assets/img/mui.svg" height="14.86" alt="" /></i>
+                                </p>
+                                <p>
+                                    With this mobile Web application you start by creating a car with general data after your registration. Next, the checklist with 11 categories and about 100 questions is available to you. The individual questions can be answered via corresponding checkboxes and, if applicable, estimated repair costs can be specified. At the end, an overview of the results, including the total repair costs, is available to help you decide for or against a purchase. You'll have
+                                    a stronger position to negotiate the price as well.
+                                </p>
+                                <h4>Features</h4>
+                                <ul class="fa-ul">
+                                    <li>
+                                        <span class="fa-li"><i class="fas fa-caret-right"></i></span>Registration / Login / Logout / Password reset / Account deletion
+                                    </li>
+                                    <li>
+                                        <span class="fa-li"><i class="fas fa-caret-right"></i></span>Create and edit a car with general information
+                                    </li>
+                                    <li>
+                                        <span class="fa-li"><i class="fas fa-caret-right"></i></span>Checklist with 11 categories and about 100 questions plus additional information
+                                    </li>
+                                    <li>
+                                        <span class="fa-li"><i class="fas fa-caret-right"></i></span>Evaluation with overview of the check results and, if applicable, the amount of repair costs
+                                    </li>
+                                </ul>
+                                <a class="btn btn-primary mt-2 mb-5" target="_blank" href="https://www.mobilecarchecker.com" role="button">Visit Web App</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projectImages col-12 col-lg-5 d-flex flex-column justify-content-start align-items-end mt-0 mb-5 my-lg-0">
+                        <div class="position-absolute projectImageBackground"></div>
+                        <img class="img-fluid projectImageNotebook animateblock bottom" src="assets/img/mobileCarChecker_notebook_800x450.png" alt="" />
+                        <img class="img-fluid projectImageTablet animateblock bottom" src="assets/img/mobileCarChecker_tablet_400x553.png" alt="" />
+                        <img class="img-fluid projectImageMobile animateblock bottom" src="assets/img/mobileCarChecker_mobile_300x594.png" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- #Zuckerrede -->
+            <div class="container d-flex align-items-center project" id="zuckerrede">
+                <div class="row d-flex align-items-center px-md-5">
+                    <div class="col-12 col-lg-7 d-flex flex-column align-items-start px-lg-5" id="zuckerredeLeft">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Zuckerrede</h2>
+                                <h3 class="h6">Independent Wedding Speaker</h3>
+                                <p>Behind Zuckerede is Katharina Albrecht, who has set up her young company as a freelance wedding speaker for prospective bridal couples.</p>
+                                <p>The aim of the website was to create a representative central contact point for the young company. An appealing and at the same time dynamic design were key factors, which were developed and implemented in close cooperation with Katharina.</p>
+                                <p class="mt-3">
+                                    <i data-toggle="tooltip" data-placement="top" title="HTML" class="fab fa-html5"></i>
+                                    <i data-toggle="tooltip" data-placement="top" title="CSS" class="fab fa-css3"></i>
+                                    <i data-toggle="tooltip" data-placement="top" title="PHP" class="fab fa-php"></i>
+                                    <i data-toggle="tooltip" data-placement="top" title="Bootstrap" class="fab fa-bootstrap"></i>
+                                    <i data-toggle="tooltip" data-placement="top" title="JavaScript" class="fab fa-js"></i>
+                                </p>
+                                <p>During the implementation, the Bootstrap library was used in conjunction with jQuery to display dynamic content and animations.</p>
+                                <a class="btn btn-primary mt-2 mb-5" target="_blank" href="https://www.zuckerrede.de" role="button">Visit Website</a>
+                            </div>
+                        </div>
+                        <div class="row px-1 d-none d-lg-flex animateblock left">
+                            <div class="testimonial-background"><i class="fas fa-quote-right m-0 p-0"></i></div>
+                            <div class="col-3 col-md-2 p-0 pl-3">
+                                <img class="img-fluid rounded-circle imgTestimonial" src="assets/img/KatharinaAlbrecht_testimonial_200x200.jpg" alt="" />
+                            </div>
+                            <div class="col-9 col-md-10">
+                                <blockquote class="blockquote text-right pr-lg-4">
+                                    <p class="mb-0">Christopher, I thank you for your skills, your ideas and your commitment. I could not have imagined a more professional partner for the development of my website. It has turned out absolutely great and is definitely responsible for the successful start of my business.</p>
+                                    <footer class="blockquote-footer">Katharina Albrecht from <cite title="Source Title">Zuckerrede</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projectImages col-12 col-lg-5 d-flex flex-column justify-content-start align-items-end mt-0 mb-5 my-lg-0">
+                        <div class="position-absolute projectImageBackground"></div>
+                        <img class="img-fluid projectImageNotebook animateblock bottom" src="assets/img/Zuckerrede_notebook_800x450.png" alt="" />
+                        <img class="img-fluid projectImageTablet animateblock bottom" src="assets/img/Zuckerrede_tablet_400x553.png" alt="" />
+                        <img class="img-fluid projectImageMobile animateblock bottom" src="assets/img/Zuckerrede_mobile_300x594.png" alt="" />
+                    </div>
+                    <div class="row px-1 d-lg-none animateblock left mt-5 mx-0">
+                        <div class="testimonial-background"><i class="fas fa-quote-right m-0 p-0"></i></div>
+                        <div class="col-3 col-md-2 p-0 pl-3 text-right">
+                            <img class="img-fluid rounded-circle imgTestimonial" src="assets/img/KatharinaAlbrecht_testimonial_200x200.jpg" alt="" />
+                        </div>
+                        <div class="col-9 col-md-10 pr-5">
+                            <blockquote class="blockquote text-right pr-lg-4">
+                                <p class="mb-0">Christopher, I thank you for your skills, your ideas and your commitment. I could not have imagined a more professional partner for the development of my website. It has turned out absolutely great and is definitely responsible for the successful start of my business.</p>
+                                <footer class="blockquote-footer">Katharina Albrecht from <cite title="Source Title">Zuckerrede</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #MFA mal anders -->
+            <div class="container d-flex align-items-center project" id="mfaMalAnders">
+                <div class="row d-flex align-items-center px-md-5">
+                    <div class="col-12 col-lg-7 d-flex flex-column align-items-start px-lg-5" id="mfaMalAndersLeft">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>MFA mal anders</h2>
+                                <h3 class="h6">Job and career portal for Medical Assistants</h3>
+                                <p>MFA mal anders is a career portal for medical professionals. The website offers a broad portfolio of information about further education and training as well as a job board as a central element.</p>
+                                <p>The website should have a fresh, modern design and a simple interface for providing new content. It should also provide a way to efficiently collect and publish job advertisements.</p>
+                                <p class="mt-3">
+                                    <i data-toggle="tooltip" data-placement="top" title="HTML" class="fab fa-html5"></i>
+                                    <i data-toggle="tooltip" data-placement="top" title="CSS" class="fab fa-css3"></i>
+                                    <i data-toggle="tooltip" data-placement="top" title="PHP" class="fab fa-php"></i>
+                                    <i data-toggle="tooltip" data-placement="top" title="WordPress" class="fab fa-wordpress"></i>
+                                    <i data-toggle="tooltip" data-placement="top" title="Elementor" class="fab fa-elementor"></i>
+                                </p>
+                                <p>For the implementation, the content management system WordPress was used in combination with various plug-ins and the page builder Elementor. Further individual adjustments were made using PHP.</p>
+                                <a class="btn btn-primary mt-2 mb-5" target="_blank" href="https://www.mfa-mal-anders.de" role="button">Visit Website</a>
+                            </div>
+                        </div>
+                        <div class="row px-1 d-none d-lg-flex animateblock left">
+                            <div class="testimonial-background"><i class="fas fa-quote-right m-0 p-0"></i></div>
+                            <div class="col-3 col-md-2 p-0 pl-3">
+                                <img class="img-fluid rounded-circle imgTestimonial" src="assets/img/KristinMaurach_testimonial_200x200.jpg" alt="" />
+                            </div>
+                            <div class="col-9 col-md-10">
+                                <blockquote class="blockquote text-right pr-lg-4">
+                                    <p class="mb-0">With the support of Chris I was able to successfully implement and market the platform. Within a short time we managed to generate several thousand hits per month without any paid advertising.</p>
+                                    <footer class="blockquote-footer">Kristin Maurach from <cite title="Source Title">MFA mal anders</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projectImages col-12 col-lg-5 d-flex flex-column justify-content-start align-items-end mt-0 mb-5 my-lg-0">
+                        <div class="position-absolute projectImageBackground"></div>
+                        <img class="img-fluid projectImageNotebook animateblock bottom" src="assets/img/MfaMalAnders_notebook_800x450.png" alt="" />
+                        <img class="img-fluid projectImageTablet animateblock bottom" src="assets/img/MfaMalAnders_tablet_400x553.png" alt="" />
+                        <img class="img-fluid projectImageMobile animateblock bottom" src="assets/img/MfaMalAnders_mobile_300x594.png" alt="" />
+                    </div>
+                    <div class="row px-1 d-lg-none animateblock left mt-5 mx-0">
+                        <div class="testimonial-background"><i class="fas fa-quote-right m-0 p-0"></i></div>
+                        <div class="col-3 col-md-2 p-0 pl-3 text-right">
+                            <img class="img-fluid rounded-circle imgTestimonial" src="assets/img/KristinMaurach_testimonial_200x200.jpg" alt="" />
+                        </div>
+                        <div class="col-9 col-md-10 pr-5">
+                            <blockquote class="blockquote text-right pr-lg-4">
+                                <p class="mb-0">With the support of Chris I was able to successfully implement and market the platform. Within a short time we managed to generate several thousand hits per month without any paid advertising.</p>
+                                <footer class="blockquote-footer">Kristin Maurach from <cite title="Source Title">MFA mal anders</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #MORE PROJECTS -->
+            <div class="container d-flex flex-column align-items-center mb-5" id="moreProjects">
+                <div>
+                    <button class="btn btn-primary mb-5" type="button" data-toggle="collapse" data-target="#collapseMoreProjects" aria-expanded="false" aria-controls="collapseMoreProjects">
+                        More Projects
+                    </button>
+                </div>
+                <div class="collapse w-100" id="collapseMoreProjects">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <div class="carousel-inner">
+                            <!-- #Stadt und Grün -->
+                            <div class="project carousel-item px-2 px-md-5 active" id="stadtUndGruen">
+                                <div class="row">
+                                    <div class="col-12 col-lg-7" id="stadtUndGruenLeft">
+                                        <h2>Stadt und Grün</h2>
+                                        <h3 class="h6">Gardening and Landscaping</h3>
+                                        <p>Stadt und Grün is a small company that offers services around gardening and landscaping.</p>
+                                        <p>The website should be modern, clear and to the point. A clear presentation of the services offered as well as an easy way to contact the company are the central elements of the site.</p>
+                                        <p class="mt-3">
+                                            <i data-toggle="tooltip" data-placement="top" title="HTML" class="fab fa-html5"></i>
+                                            <i data-toggle="tooltip" data-placement="top" title="CSS" class="fab fa-css3"></i>
+                                            <i data-toggle="tooltip" data-placement="top" title="PHP" class="fab fa-php"></i>
+                                            <i data-toggle="tooltip" data-placement="top" title="Bootstrap" class="fab fa-bootstrap"></i>
+                                            <i data-toggle="tooltip" data-placement="top" title="JavaScript" class="fab fa-js"></i>
+                                        </p>
+                                        <div class="row px-1 mt-5 d-none d-lg-flex position-relative">
+                                            <div class="testimonial-background"><i class="fas fa-quote-right m-0 p-0"></i></div>
+                                            <div class="col-3 col-md-2 p-0 pl-3">
+                                                <img class="img-fluid rounded-circle imgTestimonial" src="assets/img/MarcelFrischmuth_testimonial_200x200.jpg" alt="" />
+                                            </div>
+                                            <div class="col-9 col-md-10">
+                                                <blockquote class="blockquote text-right pr-lg-4">
+                                                    <p class="mb-0">Christopher provided us with exactly the modern, clear website that we wanted. And it doesn't matter what device you use to view the site.</p>
+                                                    <footer class="blockquote-footer">Marcel Frischmuth from <cite title="Source Title">Stadt und Grün</cite></footer>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                        <a class="btn btn-primary mt-2 mb-5" target="_blank" href="https://www.stadtundgruen.com" role="button">Visit Website</a>
+                                    </div>
+                                    <div class="projectImages col-12 col-lg-5 d-flex flex-column justify-content-start align-items-end mt-0 mb-5 my-lg-0">
+                                        <div class="position-absolute projectImageBackground"></div>
+                                        <img class="img-fluid projectImageNotebook animateblock bottom" src="assets/img/StadtUndGruen_notebook_800x450.png" alt="" />
+                                        <img class="img-fluid projectImageTablet animateblock bottom" src="assets/img/StadtUndGruen_tablet_400x553.png" alt="" />
+                                        <img class="img-fluid projectImageMobile animateblock bottom" src="assets/img/StadtUndGruen_mobile_300x594.png" alt="" />
+                                    </div>
+                                    <div class="row px-1 d-lg-none mt-5 mx-0 position-relative">
+                                        <div class="testimonial-background"><i class="fas fa-quote-right m-0 p-0"></i></div>
+                                        <div class="col-3 col-md-2 p-0 pl-3 text-right">
+                                            <img class="img-fluid rounded-circle imgTestimonial" src="assets/img/MarcelFrischmuth_testimonial_200x200.jpg" alt="" />
+                                        </div>
+                                        <div class="col-9 col-md-10 pr-5">
+                                            <blockquote class="blockquote text-right pr-lg-4">
+                                                <p class="mb-0">Christopher provided us with exactly the modern, clear website that we wanted. And it doesn't matter what device you use to view the site.</p>
+                                                <footer class="blockquote-footer">Marcel Frischmuth from <cite title="Source Title">Stadt und Grün</cite></footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #Travelbook -->
+                            <div class="project carousel-item px-2 px-md-5" id="travelBook">
+                                <div class="row">
+                                    <div class="col-12 col-lg-7">
+                                        <h2>Travelbook &ndash; Social Network</h2>
+                                        <h3 class="h6">Portfolio Sample Project</h3>
+                                        <p>Travelbook is a mock social network for travelers around the world who want to connect and stay in touch.</p>
+                                        <p>Users can register, provide information about themselves, connect to other users and exchange information with other users in a public or private chat.</p>
+                                        <p class="mt-3">
+                                            <i data-toggle="tooltip" data-placement="top" title="React.js" class="fab fa-react"></i>
+                                            <i data-toggle="tooltip" data-placement="top" title="HTML" class="fab fa-html5"></i>
+                                            <i data-toggle="tooltip" data-placement="top" title="CSS" class="fab fa-css3"></i>
+                                            <i data-toggle="tooltip" data-placement="top" title="JavaScript" class="fab fa-js"></i>
+                                            <i data-toggle="tooltip" data-placement="top" title="Socket.io"><img class="mb-1" src="/assets/img/socketio.svg" width="14.86" alt="" /></i>
+                                            <i data-toggle="tooltip" data-placement="top" title="Node.js" class="fab fa-node-js"></i>
+                                            <i data-toggle="tooltip" data-placement="top" title="PostgreSQL"><img src="/assets/img/postgre.svg" width="14.86" alt="" /></i>
+                                            <i data-toggle="tooltip" data-placement="top" title="Amazon Web Services" class="fab fa-aws"></i>
+                                        </p>
+                                        <h4>Features</h4>
+                                        <ul class="fa-ul">
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Register / Login / Logout / Password reset / Account deletion
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Set up your profile with image and bio
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Search for other users and look at their profile
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Organise friendships and friendship requests
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Public (all users) and private chat (friends only)
+                                            </li>
+                                        </ul>
+                                        <a class="btn btn-primary mt-2 mb-5" target="_blank" href="https://travelbook-network.herokuapp.com/" role="button">Visit Website</a>
+                                        <a class="btn btn-primary mt-2 mb-5" target="_blank" href="https://github.com/christopherliedtke/social-network_travelbook" role="button"><i class="fab fa-github fa-lg"></i>GitHub</a>
+                                    </div>
+                                    <div class="other-project-images-container d-flex flex-column align-items-center justify-content-center col-12 col-lg-5">
+                                        <div class="other-project-image-container">
+                                            <img src="/assets/img/travelbook_register_800x600.jpg" alt="Travelbook - Register" />
+                                        </div>
+                                        <div class="other-project-image-container">
+                                            <img src="/assets/img/travelbook_search_800x600.jpg" alt="Travelbook - Searching for other users" />
+                                        </div>
+                                        <div class="other-project-image-container">
+                                            <img src="/assets/img/travelbook_chat_800x600.jpg" alt="Travelbook - Private chat with other user" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #MountainView -->
+                            <div class="project carousel-item px-2 px-md-5" id="mountainView">
+                                <div class="row">
+                                    <div class="col-12 col-lg-7">
+                                        <h2>MOUNTAINview &ndash; Imageboard</h2>
+                                        <h3 class="h6">Portfolio Sample Project</h3>
+                                        <p>MOUNTAINview is a mock image board where users can publish and view images of mountains.</p>
+                                        <p>Users can upload images with title, description, author and tags as well as scroll through and comment on already uploaded images or search for specific tags.</p>
+                                        <p class="mt-3">
+                                            <i data-toggle="tooltip" data-placement="top" title="Vue.js" class="fab fa-vuejs"></i><i data-toggle="tooltip" data-placement="top" title="HTML" class="fab fa-html5"></i><i data-toggle="tooltip" data-placement="top" title="CSS" class="fab fa-css3"></i><i data-toggle="tooltip" data-placement="top" title="JavaScript" class="fab fa-js"></i><i data-toggle="tooltip" data-placement="top" title="Node.js" class="fab fa-node-js"></i
+                                            ><i data-toggle="tooltip" data-placement="top" title="PostgreSQL"><img src="/assets/img/postgre.svg" width="14.86" alt="" /></i><i data-toggle="tooltip" data-placement="top" title="Amazon Web Services" class="fab fa-aws"></i>
+                                        </p>
+                                        <h4>Features</h4>
+                                        <ul class="fa-ul">
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Upload images with title, description, author, tags
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Overview of all uploaded images
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Detailed view of individual images including navigation to previous/next image
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Commenting on images
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Live notification of newly uploaded images
+                                            </li>
+                                        </ul>
+                                        <a class="btn btn-primary mt-2 mb-5" target="_blank" href="https://github.com/christopherliedtke/imageboard_mountainview" role="button"><i class="fab fa-github fa-lg"></i>GitHub</a>
+                                    </div>
+                                    <div class="other-project-images-container d-flex flex-column align-items-center justify-content-center col-12 col-lg-5">
+                                        <div class="other-project-image-container">
+                                            <img src="/assets/img/mountainView_home_800x600.jpg" alt="MountainView - Overview of all images" />
+                                        </div>
+                                        <div class="other-project-image-container">
+                                            <img src="/assets/img/mountainView_modal_800x600.jpg" alt="MountainView - Image detail view" />
+                                        </div>
+                                        <div class="other-project-image-container">
+                                            <img src="/assets/img/mountainView_byTag_800x600.jpg" alt="MountainView - Overview of images with specified tag" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #FreeOrcas -->
+                            <div class="project carousel-item px-2 px-md-5" id="freeOrcas">
+                                <div class="row">
+                                    <div class="col-12 col-lg-7">
+                                        <h2>Free Orcas &ndash; Petition</h2>
+                                        <h3 class="h6">Portfolio Sample Project</h3>
+                                        <p>Free Orcas is a mock petition in which users call for the liberation of orcas with their digital signature.</p>
+                                        <p>Users can register with their data and digitally sign with a mouse or touch on a mobile device. After signing, users can see which other users have also signed (optionally filtered by city).</p>
+                                        <p class="mt-3">
+                                            <i data-toggle="tooltip" data-placement="top" title="HTML" class="fab fa-html5"></i>
+                                            <i data-toggle="tooltip" data-placement="top" title="CSS3" class="fab fa-css3"></i>
+                                            <i data-toggle="tooltip" data-placement="top" title="JavaScript" class="fab fa-js"></i>
+                                            <i data-toggle="tooltip" data-placement="top" title="Node.js" class="fab fa-node-js"></i>
+                                            <i data-toggle="tooltip" data-placement="top" title="PostgreSQL"><img src="/assets/img/postgre.svg" width="14.86" alt="" /></i>
+                                        </p>
+                                        <h4>Features</h4>
+                                        <ul class="fa-ul">
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Register / Login / Logout / Account deletion
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Create and edit your own user profile (name, password, city, age, website)
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Digital signing by mouse or touch including removal of the signature
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Access to information on additional signatories restricted to signers only
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="fas fa-caret-right"></i></span>Filter signatories by city and optional link to their website
+                                            </li>
+                                        </ul>
+                                        <a class="btn btn-primary mt-2 mb-5" target="_blank" href="http://free-willy.herokuapp.com/" role="button">Visit Website</a>
+                                        <a class="btn btn-primary mt-2 mb-5" target="_blank" href="https://github.com/christopherliedtke/petition_free-orcas" role="button"><i class="fab fa-github fa-lg"></i>GitHub</a>
+                                    </div>
+                                    <div class="other-project-images-container d-flex flex-column align-items-center justify-content-center col-12 col-lg-5">
+                                        <div class="other-project-image-container">
+                                            <img src="/assets/img/freeOrcas_register_800x600.jpg" alt="Free Orcas - Register" />
+                                        </div>
+                                        <div class="other-project-image-container">
+                                            <img src="/assets/img/freeOrcas_signature_800x600.jpg" alt="Free Orcas - Digital Signing" />
+                                        </div>
+                                        <div class="other-project-image-container">
+                                            <img src="/assets/img/freeOrcas_signersByCity_800x600.jpg" alt="Free Orcas - List of additional signers by city" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- #Services -->
+        <section class="container-fluid d-flex p-0" id="service">
+            <div class="container d-flex align-items-center">
+                <div class="row d-flex align-items-center px-2 px-md-5">
+                    <!-- LEFT SIDE -->
+                    <div class="col-12 col-lg-5 order-2 order-lg-1 mb-5 my-lg-5">
+                        <div class="row flip-card card-front" id="advantages">
+                            <div class="d-flex flex-column justify-content-around">
+                                <div class="d-flex p-0">
+                                    <div class="i-container">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="bold highlight d-inline-block">Your Professional Website</h4>
+                                        <p>Get your website done by a <span class="bold">trained professional</span> with plenty of project experience!</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex p-0">
+                                    <div class="i-container">
+                                        <i class="fas fa-gift"></i>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="bold highlight d-inline-block">One-stop service</h4>
+                                        <p>On request I organize the <span class="bold">entire project</span> from design to the finished website and beyond!</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex p-0">
+                                    <div class="i-container">
+                                        <i class="fab fa-react"></i>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="bold highlight d-inline-block">Modern Technologies</h4>
+                                        <p>You want an <span class="bold">impressive website</span> that looks great on any device? Well, you've come to the right place.!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row flip-card card-back hidden" id="techStack">
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/HTML5_logo_and_wordmark.svg" alt="" width="50px" class="img-fluid" />
+                            </div>
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/CSS3_logo_and_wordmark.svg" alt="" width="50px" class="img-fluid" />
+                            </div>
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/Javascript-shield.svg" alt="" width="50px" class="img-fluid" />
+                            </div>
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/JQuery-Logo.svg" alt="" width="50px" class="img-fluid" />
+                            </div>
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/React.svg" alt="" width="50px" class="img-fluid" />
+                            </div>
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/Vue.js_Logo_2.svg" alt="" width="50px" class="img-fluid" />
+                            </div>
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/Node.js_logo.svg" alt="" width="50px" class="img-fluid" />
+                            </div>
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/Postgresql_elephant.svg" alt="" width="50px" class="img-fluid" />
+                            </div>
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/mongoDB_logo.svg" alt="" width="25px" class="img-fluid" />
+                            </div>
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/Wordpress-Logo.svg" alt="" width="50px" class="img-fluid" />
+                            </div>
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/Bootstrap_logo.svg" alt="" width="50px" class="img-fluid" />
+                            </div>
+                            <div class="col-4 d-flex justify-content-center align-items-center">
+                                <img src="assets/img/Octicons-mark-github.svg" alt="" width="50px" class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- RIGHT SIDE -->
+                    <div class="col-12 col-lg-7 d-flex flex-column align-items-start order-1 order-lg-2 my-5" id="service-right">
+                        <h2>Services</h2>
+                        <h3 class="h3-background">Services</h3>
+                        <h3 class="h6">Your Perfect Website</h3>
+                        <p>As an experienced web developer I have implemented a variety of projects with different technologies. This puts me in the position to be able to advise you individually and according to your requirements. You will get exactly the customized solution you need to achieve your goals.</p>
+                        <h3 class="h6 mt-4">What do you need?</h3>
+                        <ul class="fa-ul">
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check-square"></i></span>Individual website &ndash; optimized for all devices
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check-square"></i></span>Content Management System for own content management
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check-square"></i></span>Databases for the management of e.g. customer data
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check-square"></i></span>Connection to external API
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check-square"></i></span>Search engine optimization for Google
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check-square"></i></span>Search engines and social media marketing
+                            </li>
+                        </ul>
+                        <p class="mt-4">Do you have any additional special requirements? No problem, just get in touch and we will see what is possible together!</p>
+                        <div class="mt-3">
+                            <button class="btn btn-primary m-0 toggle-button toggle-button-left active" type="button" data-toggle="" data-target=".multi-collapse" aria-expanded="false" aria-controls="">Advantages</button><button class="btn btn-primary m-0 toggle-button toggle-button-right" type="button" data-toggle="" data-target=".multi-collapse" aria-expanded="false" aria-controls="">Technology Stack</button>
+                            <a href="#contact" class="btn btn-primary d-none d-lg-inline-block mt-lg-2 mt-xl-0">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- #About -->
+        <!-- <section class="container-fluid d-flex p-0" id="about">
+            <div class="container d-flex align-items-center">
+                <div class="row d-flex align-items-start px-md-5">
+                    <div class="col-12 col-lg-7 d-flex flex-column align-items-start px-lg-5" id="">
+                        <h2>Über</h2>
+                        <h3 class="h3-background">Über</h3>
+                        <h3 class="h6">COMING SOON</h3>
+                        <p>Demnächst erwarten Dich hier weitere Informationen...</p>
+                    </div>
+                    <div class="col-12 col-lg-5 d-flex flex-column justify-content-start mt-0 mb-5 my-lg-0"></div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- #Contact -->
+        <section class="container-fluid d-flex py-5 px-4 bg-dark" id="contact">
+            <div class="container d-flex align-items-center">
+                <div class="row d-flex align-items-center px-md-5">
+                    <div class="col-12 col-lg-6 d-flex flex-column align-items-center order-2 order-lg-1 my-3">
+                        <div class="business-card my-2 animateblock left">
+                            <div class="business-card-content">
+                                <img class="img-fluid" src="assets/img/christopherliedtke_filter_500x500.jpg" alt="" />
+                                <h3><strong>Christopher Liedtke</strong></h3>
+                                <h4>FULL STACK WEB DEVELOPER</h4>
+                            </div>
+                        </div>
+                        <div class="business-card my-2 animateblock bottom">
+                            <div class="business-card-content back-side">
+                                <div class="position-absolute text-center to-right">
+                                    <h3>Christopher Liedtke</h3>
+                                    <h4>FULL STACK WEB DEVELOPER</h4>
+                                </div>
+                                <div class="position-absolute to-left">
+                                    <span>CL</span>
+                                </div>
+                                <ul class="fa-ul">
+                                    <li>
+                                        <span class="fa-li"><i class="fas fa-globe"></i></span><a href="https://christopherliedtke.github.io/">christopherliedtke.github.io</a>
+                                    </li>
+                                    <li>
+                                        <span class="fa-li"><i class="fab fa-linkedin"></i></span><a href="https://www.linkedin.com/in/christopherliedtke">linkedin.com/in/christopherliedtke</a>
+                                    </li>
+                                    <li>
+                                        <span class="fa-li"><i class="fab fa-github"></i></span><a href="https://github.com/christopherliedtke">github.com/christopherliedtke</a>
+                                    </li>
+                                    <li>
+                                        <span class="fa-li"><i class="fas fa-envelope"></i></span><a href="mailto:christopherliedtke@gmx.com">christopherliedtke@gmx.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 d-flex flex-column order-lg-2 px-1 pl-md-5" id="contact-form">
+                        <h2>Contact</h2>
+                        <h3 class="h3-background">Contact</h3>
+                        <h3 class="h6">GET IN TOUCH</h3>
+                        <p>You'd like to work with me?</p>
+                        <p>No matter if it is a simple website or a long term project! Contact me and we will discuss your ideas and wishes.</p>
+                        <p class="my-3">
+                            <a class="a-primary" href="mailto:christopherliedtke@gmx.com"><i class="fas fa-envelope mr-3"></i>christopherliedtke@gmx.com</a>
+                        </p>
+                        <form class="my-3" method="POST" action="https://formspree.io/xdozaolp" target="_self" id="contactForm">
+                            <div class="form-group">
+                                <label for="inputName">NAME*</label>
+                                <input type="text" name="name" class="form-control" id="inputName" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail">EMAIL*</label>
+                                <input type="email" name="email" class="form-control" id="inputEmail" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPhone">PHONE</label>
+                                <input type="tel" name="phone" class="form-control" id="inputPhone" />
+                            </div>
+                            <div class="form-group">
+                                <label for="inputSubject">SUBJECT*</label>
+                                <input type="text" name="subject" class="form-control" id="inputSubject" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="inputMessage">YOUR MESSAGE*</label>
+                                <textarea name="message" class="form-control" id="inputMessage" rows="5" required></textarea>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" name="checkbox" class="form-check-input" id="inputCheckbox" required />
+                                <label class="form-check-label" for="inputCheckbox"></label>
+                                <p style="font-size: smaller;">I have taken note of the <a href="#" data-toggle="modal" data-target="#dataProtection">privacy policy</a>. I agree that my contact details will be stored permanently for the purpose of contacting me and for queries.</p>
+                            </div>
+                            <button type="submit" value="Send" class="btn btn-primary" id="contactFormSubmit">SEND</button>
+                            <div class="alert alert-success m-2" id="contactFormSuccessMessage" role="alert" style="display: none;">
+                                Thanks for your message!
+                            </div>
+                            <div class="alert alert-danger my-2" id="contactFormErrorMessage" role="alert" style="display: none;">
+                                Unfortunately an error has occurred. Please try again later or send me an e-mail directly.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="container-fluid p-0 bg-dark" id="footer">
+            <div class="py-3 d-flex d-lg-none justify-content-center" id="social">
+                <a class="p-2" href="https://www.linkedin.com/in/christopherliedtke"><i class="fab fa-linkedin fa-lg mx-2"></i>LinkedIn</a>
+                <a class="p-2" href="https://github.com/christopherliedtke"><i class="fab fa-github fa-lg mx-2"></i>GitHub</a>
+                <a class="p-2" href="https://angel.co/christopher-liedtke"><i class="fab fa-angellist fa-lg mx-2"></i>Angellist</a>
+            </div>
+            <nav class="nav pl-lg-4 pb-4 d-flex justify-content-center justify-content-lg-start">
+                <a class="nav-link py-1 px-4" href="#" data-toggle="modal" data-target="#dataProtection">Datenschutzerklärung</a>
+                <a class="nav-link py-1 px-4" href="#" data-toggle="modal" data-target="#impressum">Impressum</a>
+            </nav>
+
+            <!-- #Modal - Datenschutzerklärung -->
+            <div class="modal fade" id="dataProtection" tabindex="-1" role="dialog" aria-labelledby="dataProtectionLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="dataProtectionLabel">Data Protection</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Personenbezogene Daten (nachfolgend zumeist nur „Daten“ genannt) werden von uns nur im Rahmen der Erforderlichkeit sowie zum Zwecke der Bereitstellung eines funktionsfähigen und nutzerfreundlichen Internetauftritts, inklusive seiner Inhalte und der dort angebotenen Leistungen, verarbeitet.</p>
+                            <p>
+                                Gemäß Art. 4 Ziffer 1. der Verordnung (EU) 2016/679, also der Datenschutz-Grundverordnung (nachfolgend nur „DSGVO“ genannt), gilt als „Verarbeitung“ jeder mit oder ohne Hilfe automatisierter Verfahren ausgeführter Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit personenbezogenen Daten, wie das Erheben, das Erfassen, die Organisation, das Ordnen, die Speicherung, die Anpassung oder Veränderung, das Auslesen, das Abfragen, die Verwendung, die Offenlegung
+                                durch Übermittlung, Verbreitung oder eine andere Form der Bereitstellung, den Abgleich oder die Verknüpfung, die Einschränkung, das Löschen oder die Vernichtung.
+                            </p>
+                            <p>
+                                Mit der nachfolgenden Datenschutzerklärung informieren wir Sie insbesondere über Art, Umfang, Zweck, Dauer und Rechtsgrundlage der Verarbeitung personenbezogener Daten, soweit wir entweder allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung entscheiden. Zudem informieren wir Sie nachfolgend über die von uns zu Optimierungszwecken sowie zur Steigerung der Nutzungsqualität eingesetzten Fremdkomponenten, soweit hierdurch Dritte Daten in
+                                wiederum eigener Verantwortung verarbeiten.
+                            </p>
+                            <p>Unsere Datenschutzerklärung ist wie folgt gegliedert:</p>
+                            <p>I. Informationen über uns als Verantwortliche <br />II. Rechte der Nutzer und Betroffenen <br />III. Informationen zur Datenverarbeitung</p>
+                            <h3>I. Informationen über uns als Verantwortliche</h3>
+                            <p>Verantwortlicher Anbieter dieses Internetauftritts im datenschutzrechtlichen Sinne ist:</p>
+                            <p>Christopher Liedtke <br />Schreiberhauer Straße 9 <br />10317 Berlin</p>
+                            <p><strong>E-Mail:</strong> christopherliedtke@gmx.com</p>
+                            <h3>II. Rechte der Nutzer und Betroffenen</h3>
+                            <p>Mit Blick auf die nachfolgend noch näher beschriebene Datenverarbeitung haben die Nutzer und Betroffenen das Recht</p>
+                            <ul>
+                                <li>auf Bestätigung, ob sie betreffende Daten verarbeitet werden, auf Auskunft über die verarbeiteten Daten, auf weitere Informationen über die Datenverarbeitung sowie auf Kopien der Daten (vgl. auch Art. 15 DSGVO);</li>
+                                <li>auf Berichtigung oder Vervollständigung unrichtiger bzw. unvollständiger Daten (vgl. auch Art. 16 DSGVO);</li>
+                                <li>auf unverzügliche Löschung der sie betreffenden Daten (vgl. auch Art. 17 DSGVO), oder, alternativ, soweit eine weitere Verarbeitung gemäß Art. 17 Abs. 3 DSGVO erforderlich ist, auf Einschränkung der Verarbeitung nach Maßgabe von Art. 18 DSGVO;</li>
+                                <li>auf Erhalt der sie betreffenden und von ihnen bereitgestellten Daten und auf Übermittlung dieser Daten an andere Anbieter/Verantwortliche (vgl. auch Art. 20 DSGVO);</li>
+                                <li>auf Beschwerde gegenüber der Aufsichtsbehörde, sofern sie der Ansicht sind, dass die sie betreffenden Daten durch den Anbieter unter Verstoß gegen datenschutzrechtliche Bestimmungen verarbeitet werden (vgl. auch Art. 77 DSGVO).</li>
+                            </ul>
+                            <p>
+                                Darüber hinaus ist der Anbieter dazu verpflichtet, alle Empfänger, denen gegenüber Daten durch den Anbieter offengelegt worden sind, über jedwede Berichtigung oder Löschung von Daten oder die Einschränkung der Verarbeitung, die aufgrund der Artikel 16, 17 Abs. 1, 18 DSGVO erfolgt, zu unterrichten. Diese Verpflichtung besteht jedoch nicht, soweit diese Mitteilung unmöglich oder mit einem unverhältnismäßigen Aufwand verbunden ist. Unbeschadet dessen hat der Nutzer
+                                ein Recht auf Auskunft über diese Empfänger.
+                            </p>
+                            <p><strong>Ebenfalls haben die Nutzer und Betroffenen nach Art. 21 DSGVO das Recht auf Widerspruch gegen die künftige Verarbeitung der sie betreffenden Daten, sofern die Daten durch den Anbieter nach Maßgabe von Art. 6 Abs. 1 lit. f) DSGVO verarbeitet werden. Insbesondere ist ein Widerspruch gegen die Datenverarbeitung zum Zwecke der Direktwerbung statthaft.</strong></p>
+                            <h3>III. Informationen zur Datenverarbeitung</h3>
+                            <p>Ihre bei Nutzung unseres Internetauftritts verarbeiteten Daten werden gelöscht oder gesperrt, sobald der Zweck der Speicherung entfällt, der Löschung der Daten keine gesetzlichen Aufbewahrungspflichten entgegenstehen und nachfolgend keine anderslautenden Angaben zu einzelnen Verarbeitungsverfahren gemacht werden.</p>
+                            <h4>Cookies</h4>
+                            <h5>a) Sitzungs-Cookies/Session-Cookies</h5>
+                            <p>Wir verwenden mit unserem Internetauftritt sog. Cookies. Cookies sind kleine Textdateien oder andere Speichertechnologien, die durch den von Ihnen eingesetzten Internet-Browser auf Ihrem Endgerät ablegt und gespeichert werden. Durch diese Cookies werden im individuellen Umfang bestimmte Informationen von Ihnen, wie beispielsweise Ihre Browser- oder Standortdaten oder Ihre IP-Adresse, verarbeitet.</p>
+                            <p>Durch diese Verarbeitung wird unser Internetauftritt benutzerfreundlicher, effektiver und sicherer, da die Verarbeitung bspw. die Wiedergabe unseres Internetauftritts in unterschiedlichen Sprachen oder das Angebot einer Warenkorbfunktion ermöglicht.</p>
+                            <p>Rechtsgrundlage dieser Verarbeitung ist Art. 6 Abs. 1 lit b.) DSGVO, sofern diese Cookies Daten zur Vertragsanbahnung oder Vertragsabwicklung verarbeitet werden.</p>
+                            <p>Falls die Verarbeitung nicht der Vertragsanbahnung oder Vertragsabwicklung dient, liegt unser berechtigtes Interesse in der Verbesserung der Funktionalität unseres Internetauftritts. Rechtsgrundlage ist in dann Art. 6 Abs. 1 lit. f) DSGVO.</p>
+                            <p>Mit Schließen Ihres Internet-Browsers werden diese Session-Cookies gelöscht.</p>
+                            <h5>b) Drittanbieter-Cookies</h5>
+                            <p>Gegebenenfalls werden mit unserem Internetauftritt auch Cookies von Partnerunternehmen, mit denen wir zum Zwecke der Werbung, der Analyse oder der Funktionalitäten unseres Internetauftritts zusammenarbeiten, verwendet.</p>
+                            <p>Die Einzelheiten hierzu, insbesondere zu den Zwecken und den Rechtsgrundlagen der Verarbeitung solcher Drittanbieter-Cookies, entnehmen Sie bitte den nachfolgenden Informationen.</p>
+                            <h5>c) Beseitigungsmöglichkeit</h5>
+                            <p>
+                                Sie können die Installation der Cookies durch eine Einstellung Ihres Internet-Browsers verhindern oder einschränken. Ebenfalls können Sie bereits gespeicherte Cookies jederzeit löschen. Die hierfür erforderlichen Schritte und Maßnahmen hängen jedoch von Ihrem konkret genutzten Internet-Browser ab. Bei Fragen benutzen Sie daher bitte die Hilfefunktion oder Dokumentation Ihres Internet-Browsers oder wenden sich an dessen Hersteller bzw. Support. Bei sog.
+                                Flash-Cookies kann die Verarbeitung allerdings nicht über die Einstellungen des Browsers unterbunden werden. Stattdessen müssen Sie insoweit die Einstellung Ihres Flash-Players ändern. Auch die hierfür erforderlichen Schritte und Maßnahmen hängen von Ihrem konkret genutzten Flash-Player ab. Bei Fragen benutzen Sie daher bitte ebenso die Hilfefunktion oder Dokumentation Ihres Flash-Players oder wenden sich an den Hersteller bzw. Benutzer-Support.
+                            </p>
+                            <p>Sollten Sie die Installation der Cookies verhindern oder einschränken, kann dies allerdings dazu führen, dass nicht sämtliche Funktionen unseres Internetauftritts vollumfänglich nutzbar sind.</p>
+                            <h4>Kontaktanfragen / Kontaktmöglichkeit</h4>
+                            <p>Sofern Sie per Kontaktformular oder E-Mail mit uns in Kontakt treten, werden die dabei von Ihnen angegebenen Daten zur Bearbeitung Ihrer Anfrage genutzt. Die Angabe der Daten ist zur Bearbeitung und Beantwortung Ihre Anfrage erforderlich - ohne deren Bereitstellung können wir Ihre Anfrage nicht oder allenfalls eingeschränkt beantworten.</p>
+                            <p>Rechtsgrundlage für diese Verarbeitung ist Art. 6 Abs. 1 lit. b) DSGVO.</p>
+                            <p>Ihre Daten werden gelöscht, sofern Ihre Anfrage abschließend beantwortet worden ist und der Löschung keine gesetzlichen Aufbewahrungspflichten entgegenstehen, wie bspw. bei einer sich etwaig anschließenden Vertragsabwicklung.</p>
+                            <h4>Google Analytics</h4>
+                            <p>In unserem Internetauftritt setzen wir Google Analytics ein. Hierbei handelt es sich um einen Webanalysedienst der Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043 USA, nachfolgend nur „Google“ genannt.</p>
+                            <p>Durch die Zertifizierung nach dem EU-US-Datenschutzschild („EU-US Privacy Shield“)</p>
+                            <p>
+                                <a href="https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&amp;status=Active" rel="noopener noreferrer" target="_blank">https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&amp;status=Active</a>
+                            </p>
+                            <p>garantiert Google, dass die Datenschutzvorgaben der EU auch bei der Verarbeitung von Daten in den USA eingehalten werden.</p>
+                            <p>Der Dienst Google Analytics dient zur Analyse des Nutzungsverhaltens unseres Internetauftritts. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f) DSGVO. Unser berechtigtes Interesse liegt in der Analyse, Optimierung und dem wirtschaftlichen Betrieb unseres Internetauftritts.</p>
+                            <p>Nutzungs- und nutzerbezogene Informationen, wie bspw. IP-Adresse, Ort, Zeit oder Häufigkeit des Besuchs unseres Internetauftritts, werden dabei an einen Server von Google in den USA übertragen und dort gespeichert. Allerdings nutzen wir Google Analytics mit der sog. Anonymisierungsfunktion. Durch diese Funktion kürzt Google die IP-Adresse schon innerhalb der EU bzw. des EWR.</p>
+                            <p>Die so erhobenen Daten werden wiederum von Google genutzt, um uns eine Auswertung über den Besuch unseres Internetauftritts sowie über die dortigen Nutzungsaktivitäten zur Verfügung zu stellen. Auch können diese Daten genutzt werden, um weitere Dienstleistungen zu erbringen, die mit der Nutzung unseres Internetauftritts und der Nutzung des Internets zusammenhängen.</p>
+                            <p>Google gibt an, Ihre IP-Adresse nicht mit anderen Daten zu verbinden. Zudem hält Google unter</p>
+                            <p>
+                                <a href="https://www.google.com/intl/de/policies/privacy/partners" rel="noopener noreferrer" target="_blank">https://www.google.com/intl/de/policies/...</a>
+                            </p>
+                            <p>weitere datenschutzrechtliche Informationen für Sie bereit, so bspw. auch zu den Möglichkeiten, die Datennutzung zu unterbinden.</p>
+                            <p>Widerspruch gegen Datenerfassung</p>
+                            <p>Sie können die Erfassung Ihrer Daten durch Google Analytics verhindern, indem Sie auf folgenden Link klicken. Es wird ein Opt-Out-Cookie gesetzt, der die Erfassung Ihrer Daten bei zukünftigen Besuchen dieser Website verhindert:&nbsp;[ga-optout text="Google Analytics deaktivieren"]</p>
+                            <p>Zudem bietet Google unter</p>
+                            <p>
+                                <a href="https://tools.google.com/dlpage/gaoptout?hl=de" rel="noopener noreferrer" target="_blank">https://tools.google.com/dlpage/gaoptout?hl=de</a>
+                            </p>
+                            <p>
+                                ein sog. Deaktivierungs-Add-on nebst weiteren Informationen hierzu an. Dieses Add-on lässt sich mit den gängigen Internet-Browsern installieren und bietet Ihnen weitergehende Kontrollmöglichkeit über die Daten, die Google bei Aufruf unseres Internetauftritts erfasst. Dabei teilt das Add-on dem JavaScript (ga.js) von Google Analytics mit, dass Informationen zum Besuch unseres Internetauftritts nicht an Google Analytics übermittelt werden sollen. Dies verhindert
+                                aber nicht, dass Informationen an uns oder an andere Webanalysedienste übermittelt werden. Ob und welche weiteren Webanalysedienste von uns eingesetzt werden, erfahren Sie natürlich ebenfalls in dieser Datenschutzerklärung.
+                            </p>
+                            <h4>Google-Maps</h4>
+                            <p>In unserem Internetauftritt setzen wir Google Maps zur Darstellung unseres Standorts sowie zur Erstellung einer Anfahrtsbeschreibung ein. Es handelt sich hierbei um einen Dienst der Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043 USA, nachfolgend nur „Google“ genannt.</p>
+                            <p>Durch die Zertifizierung nach dem EU-US-Datenschutzschild („EU-US Privacy Shield“)</p>
+                            <p>
+                                <a href="https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&amp;status=Active" rel="noopener noreferrer" target="_blank">https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&amp;status=Active</a>
+                            </p>
+                            <p>garantiert Google, dass die Datenschutzvorgaben der EU auch bei der Verarbeitung von Daten in den USA eingehalten werden.</p>
+                            <p>Um die Darstellung bestimmter Schriften in unserem Internetauftritt zu ermöglichen, wird bei Aufruf unseres Internetauftritts eine Verbindung zu dem Google-Server in den USA aufgebaut.</p>
+                            <p>Sofern Sie die in unseren Internetauftritt eingebundene Komponente Google Maps aufrufen, speichert Google über Ihren Internet-Browser ein Cookie auf Ihrem Endgerät. Um unseren Standort anzuzeigen und eine Anfahrtsbeschreibung zu erstellen, werden Ihre Nutzereinstellungen und -daten verarbeitet. Hierbei können wir nicht ausschließen, dass Google Server in den USA einsetzt.</p>
+                            <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. f) DSGVO. Unser berechtigtes Interesse liegt in der Optimierung der Funktionalität unseres Internetauftritts.</p>
+                            <p>Durch die so hergestellte Verbindung zu Google kann Google ermitteln, von welcher Website Ihre Anfrage gesendet worden ist und an welche IP-Adresse die Anfahrtsbeschreibung zu übermitteln ist.</p>
+                            <p>Sofern Sie mit dieser Verarbeitung nicht einverstanden sind, haben Sie die Möglichkeit, die Installation der Cookies durch die entsprechenden Einstellungen in Ihrem Internet-Browser zu verhindern. Einzelheiten hierzu finden Sie vorstehend unter dem Punkt „Cookies“.</p>
+                            <p>
+                                Zudem erfolgt die Nutzung von Google Maps sowie der über Google Maps erlangten Informationen nach den
+                                <a href="http://www.google.de/accounts/TOS" rel="noopener noreferrer" target="_blank">Google-Nutzungsbedingungen</a>
+                                <a href="https://policies.google.com/terms?gl=DE&amp;hl=de" rel="noopener noreferrer" target="_blank">https://policies.google.com/terms?gl=DE&amp;hl=de</a> und den <a href="http://www.google.com/intl/de_de/help/terms_maps.html" rel="noopener noreferrer" target="_blank">Geschäftsbedingungen für Google Maps</a>.
+                            </p>
+                            <p>Überdies bietet Google unter</p>
+                            <p>
+                                <a href="https://adssettings.google.com/authenticated" rel="noopener noreferrer" target="_blank">https://adssettings.google.com/authenticated</a>
+                            </p>
+                            <p>
+                                <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">https://policies.google.com/privacy</a>
+                            </p>
+                            <p>weitergehende Informationen an.</p>
+                            <h4>Google reCAPTCHA</h4>
+                            <p>In unserem Internetauftritt setzen wir Google reCAPTCHA zur Überprüfung und Vermeidung von Interaktionen auf unserer Internetseite durch automatisierte Zugriffe, bspw. durch sog. Bots, ein. Es handelt sich hierbei um einen Dienst der Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043 USA, nachfolgend nur „Google“ genannt.</p>
+                            <p>Durch die Zertifizierung nach dem EU-US-Datenschutzschild („EU-US Privacy Shield“)</p>
+                            <p>
+                                <a href="https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&amp;status=Active" rel="noopener noreferrer" target="_blank">https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&amp;status=Active</a>
+                            </p>
+                            <p>garantiert Google, dass die Datenschutzvorgaben der EU auch bei der Verarbeitung von Daten in den USA eingehalten werden.</p>
+                            <p>Durch diesen Dienst kann Google ermitteln, von welcher Webseite eine Anfrage gesendet wird sowie von welcher IP-Adresse aus Sie die sog. reCAPTCHA-Eingabebox verwenden. Neben Ihrer IP-Adresse werden womöglich noch weitere Informationen durch Google erfasst, die für das Angebot und die Gewährleistung dieses Dienstes notwendig sind.</p>
+                            <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. f) DSGVO. Unser berechtigtes Interesse liegt in der Sicherheit unseres Internetauftritts sowie in der Abwehr unerwünschter, automatisierter Zugriffe in Form von Spam o.ä..</p>
+                            <p>Google bietet unter</p>
+                            <p>
+                                <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">https://policies.google.com/privacy</a>
+                            </p>
+                            <p>weitergehende Informationen zu dem allgemeinen Umgang mit Ihren Nutzerdaten an.</p>
+                            <h4>Google Fonts</h4>
+                            <p>In unserem Internetauftritt setzen wir Google Fonts zur Darstellung externer Schriftarten ein. Es handelt sich hierbei um einen Dienst der Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043 USA, nachfolgend nur „Google“ genannt.</p>
+                            <p>Durch die Zertifizierung nach dem EU-US-Datenschutzschild („EU-US Privacy Shield“)</p>
+                            <p>
+                                <a href="https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&amp;status=Active" rel="noopener noreferrer" target="_blank">https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&amp;status=Active</a>
+                            </p>
+                            <p>garantiert Google, dass die Datenschutzvorgaben der EU auch bei der Verarbeitung von Daten in den USA eingehalten werden.</p>
+                            <p>Um die Darstellung bestimmter Schriften in unserem Internetauftritt zu ermöglichen, wird bei Aufruf unseres Internetauftritts eine Verbindung zu dem Google-Server in den USA aufgebaut.</p>
+                            <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. f) DSGVO. Unser berechtigtes Interesse liegt in der Optimierung und dem wirtschaftlichen Betrieb unseres Internetauftritts.</p>
+                            <p>Durch die bei Aufruf unseres Internetauftritts hergestellte Verbindung zu Google kann Google ermitteln, von welcher Website Ihre Anfrage gesendet worden ist und an welche IP-Adresse die Darstellung der Schrift zu übermitteln ist.</p>
+                            <p>Google bietet unter</p>
+                            <p>
+                                <a href="https://adssettings.google.com/authenticated" rel="noopener noreferrer" target="_blank">https://adssettings.google.com/authenticated</a>
+                            </p>
+                            <p>
+                                <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">https://policies.google.com/privacy</a>
+                            </p>
+                            <p>weitere Informationen an und zwar insbesondere zu den Möglichkeiten der Unterbindung der Datennutzung.</p>
+                            <h4>YouTube</h4>
+                            <p>In unserem Internetauftritt setzen wir YouTube ein. Hierbei handelt es sich um ein Videoportal der YouTube LLC., 901 Cherry Ave., 94066 San Bruno, CA, USA, nachfolgend nur „YouTube“ genannt.</p>
+                            <p>YouTube ist ein Tochterunternehmen der Google LLC., 1600 Amphitheatre Parkway, Mountain View, CA 94043 USA, nachfolgend nur „Google“ genannt.</p>
+                            <p>Durch die Zertifizierung nach dem EU-US-Datenschutzschild („EU-US Privacy Shield“)</p>
+                            <p>
+                                <a href="https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&amp;status=Active" rel="noopener noreferrer" target="_blank">https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&amp;status=Active</a>
+                            </p>
+                            <p>garantiert Google und damit auch das Tochterunternehmen YouTube, dass die Datenschutzvorgaben der EU auch bei der Verarbeitung von Daten in den USA eingehalten werden.</p>
+                            <p>
+                                Wir nutzen YouTube im Zusammenhang mit der Funktion „Erweiterter Datenschutzmodus“, um Ihnen Videos anzeigen zu können. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f) DSGVO. Unser berechtigtes Interesse liegt in der Qualitätsverbesserung unseres Internetauftritts. Die Funktion „Erweiterter Datenschutzmodus“ bewirkt laut Angaben von YouTube, dass die nachfolgend noch näher bezeichneten Daten nur dann an den Server von YouTube übermittelt werden, wenn Sie ein Video auch
+                                tatsächlich starten.
+                            </p>
+                            <p>Ohne diesen „Erweiterten Datenschutz“ wird eine Verbindung zum Server von YouTube in den USA hergestellt, sobald Sie eine unserer Internetseiten, auf der ein YouTube-Video eingebettet ist, aufrufen.</p>
+                            <p>Diese Verbindung ist erforderlich, um das jeweilige Video auf unserer Internetseite über Ihren Internet-Browser darstellen zu können. Im Zuge dessen wird YouTube zumindest Ihre IP-Adresse, das Datum nebst Uhrzeit sowie die von Ihnen besuchte Internetseite erfassen und verarbeiten. Zudem wird eine Verbindung zu dem Werbenetzwerk „DoubleClick“ von Google hergestellt.</p>
+                            <p>Sollten Sie gleichzeitig bei YouTube eingeloggt sein, weist YouTube die Verbindungsinformationen Ihrem YouTube-Konto zu. Wenn Sie das verhindern möchten, müssen Sie sich entweder vor dem Besuch unseres Internetauftritts bei YouTube ausloggen oder die entsprechenden Einstellungen in Ihrem YouTube-Benutzerkonto vornehmen.</p>
+                            <p>Zum Zwecke der Funktionalität sowie zur Analyse des Nutzungsverhaltens speichert YouTube dauerhaft Cookies über Ihren Internet-Browser auf Ihrem Endgerät. Falls Sie mit dieser Verarbeitung nicht einverstanden sind, haben Sie die Möglichkeit, die Speicherung der Cookies durch eine Einstellung in Ihrem Internet-Browsers zu verhindern. Nähere Informationen hierzu finden Sie vorstehend unter „Cookies“.</p>
+                            <p>Weitergehende Informationen über die Erhebung und Nutzung von Daten sowie Ihre diesbezüglichen Rechte und Schutzmöglichkeiten hält Google in den unter</p>
+                            <p>
+                                <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">https://policies.google.com/privacy</a>
+                            </p>
+                            <p>abrufbaren Datenschutzhinweisen bereit.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Schließen</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #Modal - Impressum -->
+            <div class="modal fade" id="impressum" tabindex="-1" role="dialog" aria-labelledby="impressumLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="impressumLabel">Impressum</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Angaben gemäß § 5 TMG</p>
+                            <p>Christopher Liedtke <br />Schreiberhauer Straße 9 <br />10317 Berlin</p>
+                            <p><strong>Vertreten durch:&nbsp;</strong> <br />Christopher Liedtke <br />Steuernummer:</p>
+                            <p><strong>Kontakt:</strong> <br />E-Mail: christopherliedtke@gmx.com</p>
+                            <p><strong>Haftungsausschluss:&nbsp;</strong></p>
+                            <p><strong>Haftung für Inhalte</strong></p>
+                            <p>
+                                Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen
+                                zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+                            </p>
+                            <p><strong>Haftung für Links</strong></p>
+                            <p>
+                                Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine
+                                permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+                            </p>
+                            <p><strong>Urheberrecht</strong></p>
+                            <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.</p>
+                            <p>Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
+                            <p>Das Copyright für das Bild KatharinaSommer(49von109)_800x800.jpg liegt bei Julia Liebmann.</p>
+                            <p>Das Copyright für das Bild SommerKatharina_STA5129©TorstenStapel.jpg liegt bei Torsten Stapel.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Schließen</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <script src="script.js"></script>
+    </body>
+</html>

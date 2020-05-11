@@ -193,6 +193,10 @@ nav {
     padding: 3rem 1rem;
 }
 
+#moreProjects .project {
+    min-height: unset;
+}
+
 .project p i {
     margin-top: 1em;
     margin-right: 0.4em;
