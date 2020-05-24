@@ -81,12 +81,11 @@
             var elementOffsetTop = $element.offset().top;
             // console.log(elementOffsetTop);
 
-            if ($element.hasClass('animated') && winTop > elementOffsetTop - windowHeight * 0.75) {
-                return true;
-            } else if ($element.hasClass('animated') && winTop < elementOffsetTop - windowHeight * 0.75) {
+            if ($element.hasClass('animated') && winTop > elementOffsetTop - windowHeight * 0.95) {
+                return;
+            } else if ($element.hasClass('animated') && winTop < elementOffsetTop - windowHeight * 0.95) {
                 $element.removeClass('animated');
-                return true;
-            } else if (winTop > elementOffsetTop - windowHeight * 0.75) {
+            } else if (winTop > elementOffsetTop - windowHeight * 0.95) {
                 $element.addClass('animated');
             }
         });
@@ -149,7 +148,7 @@
         this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
 
         // Initial Type Speed
-        var typeSpeed = 300;
+        var typeSpeed = 200;
 
         if (this.isDeleting) {
             typeSpeed /= 2;

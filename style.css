@@ -189,7 +189,9 @@ nav {
 
 /* #Projects */
 .project {
-    min-height: 90vh;
+    /* min-height: 90vh; */
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     padding: 3rem 1rem;
 }
 
@@ -780,5 +782,10 @@ input[type='checkbox']:checked + label::before {
 @media only screen and (max-width: 992px) {
     #service-right {
         padding: 1em;
+    }
+
+    .project {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
